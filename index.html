@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style1.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="style2.css" />
+    <link rel="stylesheet" href="reviews.css" />
+    <link rel="stylesheet" href="Mediaquery.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Kingros Media</title>
+  </head>
+  <body>
+    <div class="container" id="navbar-container">
+      <nav class="navbar">
+        <label class="logo"> Kingros Media</label>
+        <ul class="nav-link" id="nav-link">
+          <li class="nav-links">
+            <a href="index.html">Home</a>
+          </li>
+          <li class="nav-links service-dropdown">
+            <a href="">Services</a>
+            <ul class="drop-down">
+              <li>
+                <a href="indexwedding.html">Wedding Photography</a>
+              </li>
+              <li>
+                <a href="indexPhotography.html">Studio Photography</a>
+              </li>
+              <li>
+                <a href="">Live Streaming</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-links">
+            <a href="indexAbout.html">About</a>
+          </li>
+          <li class="nav-links">
+            <a href="indexContact.html">contact</a>
+          </li>
+          <li class="nav-links">
+            <a href="">Blogs</a>
+          </li>
+          <li class="nav-links">
+            <a href="indexbooking.html">Booking</a>
+          </li>
+        </ul>
+
+        <div class="arrows">
+          <button class="back-arrow" onclick="coverBackArrow()">&#8249;</button>
+          <button class="next-arrow" onclick="coverNextArrow()">&#8250;</button>
+        </div>
+      </nav>
+      <div class="menu-icon">
+        <img
+          onclick="downMenu()"
+          id="menuNav"
+          src="/Images/menuicon.png"
+          alt=""
+        />
+      </div>
+
+      <div class="header-text">
+        <h1>Wedding, Event Video & Photography</h1>
+        <p>
+          We are team of passionate and commited to produce highy quality and
+          change the narrative that highy quality photography is very expensive.
+        </p>
+      </div>
+      <div class="socialmedia-icon socialmediaicons" id="pagesocialmediaicons">
+        <a href="https://web.facebook.com/stephen.kimuhu.1" target="_blank"
+          ><img src="./Images/facebook.png" alt=""
+        /></a>
+
+        <a href="https://www.instagram.com/kingros_media/" target="_blank">
+          <img src="./Images/instagram image.png" alt=""
+        /></a>
+
+        <a href="https://www.youtube.com/@kingrosmedia4949" target="_blank">
+          <img src="./Images/youtube4.png" alt=""
+        /></a>
+      </div>
+      <div class="pagebtn">
+        <button><a href="indexContact.html"> Contact Us </a></button>
+      </div>
+    </div>
+
+    <div class="work">
+      <h1>My Work</h1>
+      <div class="container1">
+        <div class="photo-container">
+          <img src="/Images/Wedding (6).jpg" alt="" />
+          <div>
+            <p onclick="weddingShoot()">
+              wedding <br />Photography <br />
+              Album
+            </p>
+          </div>
+        </div>
+
+        <div class="photo-container">
+          <img src="/Images/Portrait (2).jpg" alt="" />
+          <div>
+            <p onclick="studioShoot()">
+              Studio <br />
+              Photography <br />
+              Album
+            </p>
+          </div>
+        </div>
+
+        <div class="photo-container">
+          <img src="/Images/Retouch (12).jpg" alt="" />
+          <div>
+            <p onclick="retouchShoot()">
+              Retouch <br />
+              Photography <br />Album
+            </p>
+          </div>
+        </div>
+
+        <div class="photo-container">
+          <img src="/Images/Wrapping (18).jpg" alt="" />
+          <div>
+            <p onclick="wrappingShoot()">
+              Wrapping <br />Photography <br />
+              Album
+            </p>
+          </div>
+        </div>
+
+        <div class="photo-container">
+          <img src="/Images/B 1 (15).jpg" alt="" />
+          <div>
+            <p onclick="babyBumpShoot()()">
+              BabyBump <br />Photography <br />
+              Album
+            </p>
+          </div>
+        </div>
+
+        <div class="photo-container">
+          <img src="/Images/Wedding (6).jpg" alt="" />
+          <div>
+            <p onclick="productShoot()">
+              Product <br />Photography <br />Album
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--Testimonials---------------------------->
+
+    <section id="Testimonials">
+      <!--heading-------------------------->
+      <div class="customer-reviews-heading">
+        <span>Comments</span>
+        <h1>Clients Says</h1>
+      </div>
+
+      <!--testimonial box container---------------------------->
+      <div class="Testimonial-box-container" id="Testimonial-box-container">
+        <!--box 1--------------------------------->
+
+        <div class="testimanial-box" id="testimanial-box">
+          <!--Top of of reviews----------------------->
+          <div class="box-top" id="box-top">
+            <!--profile---------------------->
+            <div class="profile" id="profile">
+              <!--img-->
+              <div class="profile-img" id="profile-img">
+                <img src="/Images/DSC_1748.jpg" alt="" />
+              </div>
+              <!--name and user-------------------->
+              <div class="name-user" id="name-user">
+                <strong>Daniel Kamau</strong>
+                <span>@danielMauka</span>
+              </div>
+            </div>
+            <!--reviews------------------>
+            <div class="reviews" id="reviews">
+              <i class="fa fa-star checked"></i>
+              <i class="fa fa-star checked"></i>
+              <i class="fa fa-star checked"></i>
+              <i class="fa fa-star checked"></i>
+              <i class="fa fa-star"></i>
+            </div>
+          </div>
+
+          <!--comments----------------------->
+          <div class="client-comments" id="client-comments">
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis
+              impedit modi fugit quos maiores doloremque enim deleniti, sunt
+              dolorum cum amet consequuntur dolor, accusamus suscipit!
+              Repudiandae id iste praesentium eveniet?
+            </p>
+          </div>
+        </div>
+
+        <!--box 2--------------------------------->
+
+        <div class="testimanial-box" id="testimanial-box">
+          <!--Top of of reviews----------------------->
+          <div class="box-top" id="box-top">
+            <!--profile---------------------->
+            <div class="profile" id="profile">
+              <!--img-->
+              <div class="profile-img" id="profile-img">
+                <img src="/Images/studio5.jpg" alt="" />
+              </div>
+              <!--name and user-------------------->
+              <div class="name-user" id="name-user">
+                <strong>cathline Kimani</strong>
+                <span>@cateheri</span>
+              </div>
+            </div>
+            <!--reviews------------------>
+            <div class="reviews" id="reviews">
+              <i class="fa fa-star checked"></i>
+              <i class="fa fa-star checked"></i>
+              <i class="fa fa-star checked"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+            </div>
+          </div>
+
+          <!--comments----------------------->
+          <div class="client-comments" id="client-comments">
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis
+              impedit modi fugit quos maiores doloremque enim deleniti, sunt
+              dolorum cum amet consequuntur dolor, accusamus suscipit!
+              Repudiandae id iste praesentium eveniet?
+            </p>
+          </div>
+        </div>
+
+        <div class="hidden-testimonials" id="hidden-testimonials">
+          <!--box 3--------------------------------->
+
+          <div class="testimanial-box" id="testimanial-box">
+            <!--Top of of reviews----------------------->
+            <div class="box-top" id="box-top">
+              <!--profile---------------------->
+              <div class="profile" id="profile">
+                <!--img-->
+                <div class="profile-img" id="profile-img">
+                  <img src="/Images/IMG_9060.jpg" alt="" />
+                </div>
+                <!--name and user-------------------->
+                <div class="name-user" id="name-user">
+                  <strong>Stephen Kimani</strong>
+                  <span>@kimanimugo</span>
+                </div>
+              </div>
+              <!--reviews------------------>
+              <div class="reviews" id="reviews">
+                <i class="fa fa-star checked"></i>
+                <i class="fa fa-star checked"></i>
+                <i class="fa fa-star checked"></i>
+                <i class="fa fa-star checked"></i>
+                <i class="fa fa-star checked"></i>
+              </div>
+            </div>
+
+            <!--comments----------------------->
+            <div class="client-comments" id="client-comments">
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis
+                impedit modi fugit quos maiores doloremque enim deleniti, sunt
+                dolorum cum amet consequuntur dolor, accusamus suscipit!
+                Repudiandae id iste praesentium eveniet?
+              </p>
+            </div>
+          </div>
+          <!--box 4--------------------------------->
+
+          <div class="testimanial-box" id="testimanial-box">
+            <!--Top of of reviews----------------------->
+            <div class="box-top" id="box-top">
+              <!--profile---------------------->
+              <div class="profile" id="profile">
+                <!--img-->
+                <div class="profile-img" id="profile-img">
+                  <img src="/Images/IMG_9060.jpg" alt="" />
+                </div>
+                <!--name and user-------------------->
+                <div class="name-user" id="name-user">
+                  <strong>Stephen Kimani</strong>
+                  <span>@kimanimugo</span>
+                </div>
+              </div>
+              <!--reviews------------------>
+              <div class="reviews" id="reviews">
+                <i class="fa fa-star checked"></i>
+                <i class="fa fa-star checked"></i>
+                <i class="fa fa-star checked"></i>
+                <i class="fa fa-star checked"></i>
+                <i class="fa fa-star checked"></i>
+              </div>
+            </div>
+
+            <!--comments----------------------->
+            <div class="client-comments" id="client-comments">
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis
+                impedit modi fugit quos maiores doloremque enim deleniti, sunt
+                dolorum cum amet consequuntur dolor, accusamus suscipit!
+                Repudiandae id iste praesentium eveniet?
+              </p>
+            </div>
+          </div>
+
+          <!--box 5--------------------------------->
+
+          <div class="testimanial-box" id="testimanial-box">
+            <!--Top of of reviews----------------------->
+            <div class="box-top" id="box-top">
+              <!--profile---------------------->
+              <div class="profile" id="profile">
+                <!--img-->
+                <div class="profile-img" id="profile-img">
+                  <img src="/Images/IMG_9060.jpg" alt="" />
+                </div>
+                <!--name and user-------------------->
+                <div class="name-user" id="name-user">
+                  <strong>Stephen Kimani</strong>
+                  <span>@kimanimugo</span>
+                </div>
+              </div>
+              <!--reviews------------------>
+              <div class="reviews" id="reviews">
+                <i class="fa fa-star checked"></i>
+                <i class="fa fa-star checked"></i>
+                <i class="fa fa-star checked"></i>
+                <i class="fa fa-star checked"></i>
+                <i class="fa fa-star checked"></i>
+              </div>
+            </div>
+
+            <!--comments----------------------->
+            <div class="client-comments" id="client-comments">
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis
+                impedit modi fugit quos maiores doloremque enim deleniti, sunt
+                dolorum cum amet consequuntur dolor, accusamus suscipit!
+                Repudiandae id iste praesentium eveniet?
+              </p>
+            </div>
+          </div>
+
+          <!--box 6--------------------------------->
+
+          <div class="testimanial-box" id="testimanial-box">
+            <!--Top of of reviews----------------------->
+            <div class="box-top" id="box-top">
+              <!--profile---------------------->
+              <div class="profile" id="profile">
+                <!--img-->
+                <div class="profile-img" id="profile-img">
+                  <img src="/Images/IMG_9060.jpg" alt="" />
+                </div>
+                <!--name and user-------------------->
+                <div class="name-user" id="name-user">
+                  <strong>Stephen Kimani</strong>
+                  <span>@kimanimugo</span>
+                </div>
+              </div>
+              <!--reviews------------------>
+              <div class="reviews" id="reviews">
+                <i class="fa fa-star checked"></i>
+                <i class="fa fa-star checked"></i>
+                <i class="fa fa-star checked"></i>
+                <i class="fa fa-star checked"></i>
+                <i class="fa fa-star checked"></i>
+              </div>
+            </div>
+
+            <!--comments----------------------->
+            <div class="client-comments" id="client-comments">
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis
+                impedit modi fugit quos maiores doloremque enim deleniti, sunt
+                dolorum cum amet consequuntur dolor, accusamus suscipit!
+                Repudiandae id iste praesentium eveniet?
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="more-reviews" id="more-reviews">
+        <button onclick="moreReviews()">More Reviews >></button>
+      </div>
+    </section>
+    <div class="pricing">
+      <h5>Book your session with us</h5>
+      <button onclick="bookingShoot()" id="Shootbook">Book</button>
+    </div>
+    <hr />
+    <!--img banner-->
+    <div class="footerCover">
+      <img src="/Images/sunset.jpg" alt="" />
+    </div>
+
+    <footer>
+      <div class="foot">
+        <p>Copyright &COPY; 2024 All rights reserved</p>
+        <div class="social-media-icons">
+          <a
+            href="https://web.facebook.com/stephen.kimuhu.1"
+            target="_blank"
+            rel="noopener noreferrer"
+            ><img src="./Images/facebook.png" alt=""
+          /></a>
+
+          <a href="https://www.instagram.com/kingros_media/" target="_blank">
+            <img src="./Images/instagram.png" alt=""
+          /></a>
+          <a href="https://www.youtube.com/@kingrosmedia4949" target="_blank">
+            <img src="./Images/youtube2.png" alt=""
+          /></a>
+
+          <a
+            href="https://youpic.com/danielmauka"
+            target="_blank"
+            rel="noopener noreferrer"
+            ><img src="./Images/youpic.png" alt=""
+          /></a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="javascript.js"></script>
+    <script src="javascript1.js"></script>
+    <script src="javascript2.js"></script>
+    <script src="javascriptWedding.js"></script>
+  </body>
+</html>

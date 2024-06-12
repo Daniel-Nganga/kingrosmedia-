@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style1.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="style2.css" />
+    <link rel="stylesheet" href="reviews.css" />
+    <link rel="stylesheet" href="Mediaquery.css" />
+    <title>Kingros Media</title>
+  </head>
+  <body>
+    <div class="container-booking">
+      <nav class="navbar">
+        <label class="logo"> Kingros Media</label>
+        <ul class="nav-link" id="nav-link">
+          <li class="nav-links">
+            <a href="index.html">Home</a>
+          </li>
+          <li class="nav-links service-dropdown">
+            <a href="">Services</a>
+            <ul class="drop-down">
+              <li>
+                <a href="indexwedding.html">Wedding Photography</a>
+              </li>
+              <li>
+                <a href="indexPhotography.html">Studio Photography</a>
+              </li>
+              <li>
+                <a href="">Live Streaming</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-links">
+            <a href="indexAbout.html">About</a>
+          </li>
+          <li class="nav-links">
+            <a href="indexContact.html">contact</a>
+          </li>
+          <li class="nav-links">
+            <a href="">Blogs</a>
+          </li>
+          <li class="nav-links">
+            <a href="indexbooking.html">Booking</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="menu-icon">
+        <img
+          onclick="downMenu()"
+          id="menuNav"
+          src="/Images/menuicon.png"
+          alt=""
+        />
+      </div>
+    </div>
+    <section>
+      <div class="bookingfull">
+        <div class="booking-services">
+          <h3>Wedding and photography Bookings</h3>
+        </div>
+        <div>
+          <div class="bookingrply">
+            <p>
+              I endeavour to reply to all enquiries within 24 hours. If you
+              haven`t heard back from me, please do get in touch again, just in
+              case your message has gone awry, and please do have a quick check
+              of your spam folder in case my email has got lost in there!
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="booking-container">
+        <div class="Wedding-bookings" id="Wedding-bookings">
+          <form>
+            <div class="form-groupname">
+              <div class="form-group">
+                <label for="firstname"
+                  >First Name <span class="required">*</span></label
+                >
+                <input type="text" name="firstname" id="firstname" required />
+              </div>
+              <div class="form-group">
+                <label for="lastname"
+                  >Last Name <span class="required">*</span></label
+                >
+                <input type="text" name="lastname" id="lastname" required />
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="email">Email <span class="required">*</span></label>
+              <input type="email" name="email" id="email" required />
+            </div>
+            <div class="form-group">
+              <label for="phoneNumber"
+                >Phone Number <span class="required">*</span></label
+              >
+              <input type="number" name="phone" id="phoneNumber" required />
+            </div>
+            <div class="form-group">
+              <label for="eventType"
+                >Event Type <span class="required">*</span></label
+              >
+              <select name="eventType" id="eventType" required>
+                <option value="">Select Event Type</option>
+                <option value="Birthday">Birthday</option>
+                <option value="BabyBump">BabyBump</option>
+                <option value="FamilyPortrait">Family Portrait</option>
+                <option value="HeadShots">HeadShots</option>
+                <option value="Ruracio">Ruracio</option>
+                <option value="PreWeddingShoot">Pre-Wedding Shoot</option>
+                <option value="TraditionalWedding">Traditional Wedding</option>
+                <option value="Wedding">Wedding</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="bookingdate"
+                >Date <span class="required">*</span></label
+              >
+              <input type="date" name="date" id="bookingdate" required />
+            </div>
+            <div class="form-group">
+              <label for="price">Budget<span class="required">*</span></label>
+              <input
+                type="text"
+                name="price"
+                id="price"
+                placeholder="E.g Ksh 200,000"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <label for="Message-text-area">Message</label>
+              <textarea
+                name="textarea"
+                id="Message-text-area"
+                required
+              ></textarea>
+            </div>
+            <div>
+              <button type="submit" id="submit-form">Submit</button>
+            </div>
+          </form>
+        </div>
+
+        <div class="booking-reply">
+          <h2>Feel free to get in touch with any questions</h2>
+          <p>
+            I will reply to all enquiries within 24 hours. Please contact me
+            again if you have not had a reply by then.
+          </p>
+          <div class="lastchildP">
+            <p>
+              Email: <br />
+              kingrosmedia@gmailcom
+            </p>
+            <p>phone:0724327971</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="foot">
+        <p>Copyright &COPY; 2024 All rights reserved</p>
+        <div class="social-media-icons">
+          <a
+            href="https://web.facebook.com/stephen.kimuhu.1"
+            target="_blank"
+            rel="noopener noreferrer"
+            ><img src="./Images/facebook.png" alt=""
+          /></a>
+
+          <a href="https://www.instagram.com/kingros_media/" target="_blank">
+            <img src="./Images/instagram.png" alt=""
+          /></a>
+          <a href="https://www.youtube.com/@kingrosmedia4949" target="_blank">
+            <img src="./Images/youtube2.png" alt=""
+          /></a>
+
+          <a
+            href="https://youpic.com/danielmauka"
+            target="_blank"
+            rel="noopener noreferrer"
+            ><img src="./Images/youpic.png" alt=""
+          /></a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="javascript.js"></script>
+    <script src="javascript1.js"></script>
+  </body>
+</html>

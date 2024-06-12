@@ -1,0 +1,302 @@
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+}
+.header {
+  position: relative;
+  background-image: url("Images/Property\ \(1\).jpg"); /* Replace with your background image URL */
+  height: 50vh;
+  background-size: cover;
+  background-position: center;
+
+  color: rgb(0, 0, 0);
+  margin: 0; /* Reset margin */
+  padding: 0;
+  border-bottom-left-radius: 20%;
+  border-bottom-right-radius: 20%;
+  box-shadow: 3px 4px 6px gray;
+}
+
+.arrows-about {
+  display: flex;
+}
+
+.back-arrow-about,
+.next-arrow-about {
+  font-size: 40px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: auto;
+  height: auto;
+  z-index: 1; /* Ensure arrows are above other content */
+  padding: 20px;
+  margin: 10px;
+  cursor: pointer;
+}
+
+.back-arrow-about {
+  left: 0;
+}
+
+.next-arrow-about {
+  right: 0;
+}
+.back-arrow .next-arrow:hover {
+  background-color: bisque;
+  margin: 5px solid black;
+}
+
+.image-buttons-about {
+  margin-top: 35vh;
+  text-align: center;
+}
+
+.image-buttons-about button {
+  width: 30px;
+  height: 30px;
+  background-color: rgba(255, 255, 255, 0.5);
+  border: none;
+  outline: none;
+  margin: 0 5px;
+  cursor: pointer;
+}
+
+.image-buttons-about .selected {
+  background-color: white;
+}
+
+.header-text-about {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white; /* Adjust text color as needed */
+  font-size: 24px; /* Adjust font size as needed */
+}
+.header-text-about p {
+  font-size: 40px;
+  font-weight: 700;
+  color: maroon;
+}
+
+.mission-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px auto;
+  width: 80%;
+  box-shadow: 0px 0px 20px rgba(128, 128, 128, 0.082);
+}
+
+.mission {
+  background-color: #24242405;
+  padding: 20px;
+  margin: 20px 10px;
+  width: 100%;
+  letter-spacing: 1px;
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.mission h2 {
+  font-size: 40px;
+  color: #141414;
+  margin: 10px;
+}
+
+.mission h2 span {
+  font-size: 45px;
+  color: #580606;
+}
+
+.mission p {
+  width: 100%;
+  font-size: 30px;
+  color: #141414;
+}
+
+.mission-photo {
+  width: 90%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.mission-photo img {
+  height: auto;
+  display: block;
+  margin-left: auto; /* Align the image to the right */
+  width: 70%;
+
+  border-radius: 5px;
+  box-shadow: 2px 2px 6px black;
+  margin: auto;
+}
+
+/*works cards*/
+.workersceo-container {
+  width: 100%;
+  margin: 20px auto;
+}
+
+.workers-heading h2 {
+  text-align: center;
+  font-size: 30px;
+}
+.workers-heading h2 span {
+  font-size: 40px;
+  color: #580606;
+}
+.work-name-image {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  align-self: center;
+}
+
+.worker-card {
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid #ccc;
+  padding: 20px;
+
+  margin: 10px;
+  transition: transform 0.5s;
+}
+
+.worker-details {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+.worker-details h3 {
+  font-size: 20px;
+}
+.worker-details p {
+  font-size: 18px;
+  color: rgb(77, 75, 75);
+}
+
+.icon-ceo {
+  margin: 10px 10px;
+}
+
+.icon-ceo a {
+  margin: 20px 10px;
+  cursor: pointer;
+}
+.worker-photo {
+  width: 100%;
+  position: relative;
+}
+
+.worker-photo img {
+  width: 100%;
+}
+.iconopen {
+  position: absolute;
+  top: 50%;
+  right: -10%; /* Align the icon to the right side of the container */
+  transform: translateY(-50%); /* Center the icon vertically */
+  border: solid 2px black;
+  border-radius: 50%;
+}
+.ceo-back {
+  border-radius: 10px;
+  background: #58060641;
+  box-shadow: 10px;
+  width: 450px;
+  border: 2px solid #535151;
+  display: none;
+  transition: 1s;
+  animation: slideIn 1s forwards;
+}
+
+.ceo-back p {
+  padding: 10px;
+  font-size: 18px;
+}
+.image-words {
+  width: 440px; /* Set the width to match the width of .ceo-back */
+  display: flex; /* Initially hide the image and text */
+  justify-content: space-between;
+  overflow: hidden;
+  height: 391px;
+}
+.image-words img {
+  border-radius: 10px;
+  margin: auto;
+  width: 50%;
+  height: 95%;
+  display: flex;
+  object-fit: cover;
+  object-position: center;
+}
+@keyframes slideIn {
+  0% {
+    right: 100%; /* Start position */
+  }
+  100% {
+    right: 0; /* End position */
+  }
+}
+
+.worker-card:hover .ceo-back,
+.worker-card:hover .image-words {
+  display: flex;
+}
+.employee-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: auto;
+  width: 60%;
+}
+
+.pic-team {
+  display: flex;
+  align-items: center;
+  align-content: center;
+  width: 100%;
+  height: 400px;
+  margin-left: 15%;
+  overflow: hidden;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.team {
+  width: 21%;
+  height: 400px;
+  padding: 2px 2px;
+  margin: 20px 20px;
+  border-radius: 20px;
+  outline: 1px solid black;
+  position: relative;
+}
+
+.team img {
+  width: 100%;
+  height: auto;
+}
+.team p {
+  width: 95%;
+  font-size: 25px;
+  font-weight: 800;
+  text-align: center;
+  bottom: -20px;
+  position: absolute; /* Position the text */
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: azure;
+  outline: 0.5px solid rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.308);
+}

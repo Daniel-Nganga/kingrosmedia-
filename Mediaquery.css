@@ -1,0 +1,1397 @@
+@media (min-width: 768px) {
+  .menu-icon {
+    display: none;
+  }
+}
+@media (max-width: 1024px) {
+  .logo {
+    width: 150px;
+
+    font-family: crossorigin;
+    text-decoration: none;
+    list-style: none;
+    color: rgb(0, 0, 0);
+    font-size: 18px;
+    line-height: 60px;
+    padding: 0;
+    margin-right: 100px;
+    font-weight: bold;
+    z-index: 1005;
+  }
+
+  .navbar ul li a {
+    color: rgb(0, 0, 0);
+    text-transform: uppercase;
+    border-radius: 2px;
+    font-size: 18px;
+    font-weight: 400;
+    transition: 1.5s;
+  }
+  /*-------wedding photoz displays */
+  .Wedding-type-container {
+    width: 100%;
+    position: relative;
+    margin: 20px auto;
+  }
+  .wedding-Container-all,
+  .wedding-alone,
+  .engagement,
+  .video-container {
+    width: 80%;
+    margin: auto;
+  }
+
+  .wedding-Container {
+    margin-top: 10px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .wedding-photos {
+    position: relative;
+    width: calc(50% - 5px);
+    /* Adjust width based on the number of items per row */
+
+    height: 280px;
+    max-width: 600px;
+    max-height: 500px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .icon-pic img {
+    width: 60px;
+    background-color: #55555575;
+    transition: 0.5s;
+  }
+
+  #types-of-photography {
+    display: flex;
+    width: 100%;
+    margin: auto;
+    height: 40px;
+    justify-content: space-between;
+  }
+  #types-of-photography button {
+    width: auto;
+    height: 40px;
+    line-height: 40px;
+    cursor: pointer;
+
+    font-size: 15px;
+    font-weight: bolder;
+    color: rgb(255, 255, 255);
+
+    text-transform: uppercase;
+  }
+
+  .types-of-wedding {
+    width: 100%;
+    height: 40px;
+    background-color: rgb(114, 113, 112);
+    display: flex;
+
+    overflow: hidden;
+    margin: auto;
+  }
+  .types-of-wedding button {
+    background-color: rgb(114, 113, 112);
+    width: auto;
+    height: 40px;
+    margin: auto 10px;
+    cursor: pointer;
+    border: none;
+    font-size: 13px;
+    color: white;
+    line-height: 50px;
+
+    letter-spacing: 1px;
+    text-transform: uppercase;
+  }
+  .photocategories1,
+  .studio-photography .wrapping-categories,
+  .babybump-categories,
+  .retouch-categories,
+  .nature-categories,
+  .Product-categories {
+    width: 100%;
+    margin: auto;
+  }
+
+  .photoz-Container {
+    margin-top: 2px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .studio-photoz {
+    position: relative;
+    width: calc(45% - 2px);
+    /* Adjust width based on the number of items per row */
+
+    height: 400px;
+    max-width: 600px;
+    max-height: 500px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .studio-photoz img {
+    width: 100%;
+    height: 100%;
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+    object-position: top;
+
+    cursor: pointer;
+    transition: 1s;
+  }
+
+  .icon-picsphoto img {
+    width: 50px;
+    background-color: #55555560;
+  }
+  .header-text-about {
+    width: 100%;
+  }
+
+  .header-text-about p {
+    font-size: 24px;
+  }
+  .mission-content {
+    display: block;
+
+    width: 90%;
+  }
+  .aboutabout {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+  .aboutmission {
+    margin-top: 30px;
+  }
+  .mission p {
+    width: 100%;
+    font-size: 18px;
+    color: #141414;
+  }
+  .mission-photo {
+    width: 100%;
+    height: auto;
+  }
+  .mission-photo img {
+    width: 100%;
+  }
+  .pricing1 h1 {
+    font-size: 30px;
+    top: 40%;
+    color: rgb(255, 255, 255);
+  }
+}
+@media (max-width: 767px) {
+  /*adjusting wedding  cover page*/
+  .container-wedding {
+    position: relative;
+    width: 100%;
+    height: 50vh;
+
+    background-size: cover;
+    background-position: center;
+    color: rgb(0, 0, 0);
+    display: flex;
+    text-align: center;
+    font-size: 16px;
+  }
+  #navbar-container {
+    height: 80vh;
+  }
+  .menu-icon {
+    display: block;
+  }
+  .navbar {
+    padding: 0 0;
+    margin: 0 0;
+  }
+
+  .menuicon {
+    position: absolute;
+    top: 30%;
+    left: 90%;
+    transform: translate(-50%, -50%);
+    align-self: flex-end;
+  }
+
+  .menu-icon {
+    position: absolute;
+    top: 7%;
+    left: 90%;
+    transform: translate(-50%, -50%);
+    align-self: flex-end;
+    z-index: 1002;
+  }
+
+  .logo {
+    width: 200px;
+    font-family: crossorigin;
+    text-decoration: none;
+    list-style: none;
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+    line-height: 60px;
+    padding: 0;
+    font-weight: bold;
+    z-index: 1001;
+  }
+  .nav-link {
+    display: none;
+    position: fixed;
+    top: 11rem;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    flex-direction: column;
+    order: 1;
+    width: 100%;
+    display: none;
+    background-color: rgb(216, 216, 216);
+    width: 100%;
+    z-index: 1000;
+  }
+
+  .nav-link,
+  .nav-links {
+    width: 100%;
+    text-align: center;
+    background-color: rgb(216, 216, 216);
+  }
+  .nav-links {
+    position: relative;
+    top: 35px;
+  }
+  .nav-links {
+    margin: 1rem 0;
+  }
+
+  .drop-down {
+    margin-top: 2px;
+    box-shadow: none;
+    position: relative;
+    left: 10%;
+    margin: 2px 0;
+    padding: 0;
+  }
+
+  .nav-links.service-dropdown:hover .drop-down {
+    display: block;
+  }
+
+  .service-dropdown:not(:hover) .drop-down {
+    display: block;
+    opacity: 1; /* Hide the dropdown */
+    transition-delay: 0.5s; /* Adjust the delay time as needed */
+  }
+  #menuicon-contact {
+    position: absolute;
+    top: 40%;
+    left: 90%;
+    transform: translate(-50%, -50%);
+    align-self: flex-end;
+  }
+  .arrows {
+    display: flex;
+  }
+
+  .back-arrow,
+  .next-arrow {
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: auto;
+    height: auto;
+    z-index: 1; /* Ensure arrows are above other content */
+    padding: 10px;
+    margin: 5px;
+    cursor: pointer;
+  }
+
+  .back-arrow {
+    left: 0;
+  }
+
+  .next-arrow {
+    right: 0;
+  }
+  .back-arrow .next-arrow:hover {
+    background-color: bisque;
+    margin: 5px solid black;
+  }
+  .header-text {
+    width: 80%;
+  }
+
+  .header-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  /*---------- wedding header-----------------*/
+  .wedding-header-text {
+    width: 80%;
+    font-size: 40px;
+    top: 40%;
+  }
+
+  .header-text h1 {
+    font-size: 40px;
+    color: maroon;
+    font-weight: 800;
+  }
+  .header-text p {
+    margin-top: 20px;
+    font-size: 15px;
+    color: white;
+  }
+
+  /* --------------wedding page--------*/
+  .pagebtn-wedding {
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  #studioPage {
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  #studioPage button {
+    background: transparent;
+    color: maroon;
+    width: 200px;
+    height: 70px;
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.5s;
+    outline: none;
+  }
+
+  #studioPage button a {
+    color: maroon;
+  }
+
+  #pagesocialmediaicons {
+    position: absolute;
+    top: 62%;
+    left: 70%;
+    transform: translate(-50%, -50%);
+
+    height: auto;
+    display: flex;
+    margin: auto;
+    width: 80%;
+    align-items: center;
+    align-self: center;
+    align-content: center;
+  }
+  #pagesocialmediaicons a {
+    display: flex;
+    flex-wrap: nowrap;
+    margin: 10px;
+  }
+  .socialmedia-icon,
+  .socialmedia-icon a {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .socialmedia-icon img {
+    width: 20px;
+    margin: 20px 15px;
+    cursor: pointer;
+    transition: 0.5s;
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 5px;
+  }
+  .socialmedia-icon img:hover {
+    outline: 1px solid black;
+  }
+  .pagebtn-wedding button a {
+    color: rgb(0, 0, 0);
+  }
+  .pagebtn-wedding button {
+    background: transparent;
+    color: rgb(0, 0, 0);
+    width: 250px;
+    height: 70px;
+    font-size: 24px;
+    text-transform: uppercase;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.5s;
+    outline: none;
+  }
+  .pagebtn-wedding button:hover {
+    border-radius: 20px;
+    font-weight: bold;
+    border: solid maroon 4px;
+  }
+  /* --------------Home page--------*/
+  .pagebtn {
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .pagebtn button a {
+    color: rgb(0, 0, 0);
+    font-size: 25px;
+  }
+  .pagebtn button {
+    background-color: transparent;
+    border: solid black 2px;
+    color: whitesmoke;
+    width: 180px;
+    height: 70px;
+    font-size: 15px;
+    text-transform: uppercase;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.5s;
+    outline: none;
+    border-radius: 20px;
+  }
+  .pagebtn button:hover {
+    font-weight: bold;
+    border-radius: 0%;
+    border: solid maroon 3px;
+  }
+
+  /*social Media icon of navbar------*/
+  .socialmedia-icon,
+  .socialmedia-icon a {
+    display: flex;
+    flex-wrap: wrap;
+
+    margin: auto 10px;
+  }
+  .socialmedia-icon img {
+    width: 20px;
+    margin: 20px 15px;
+    cursor: pointer;
+    transition: 0.5s;
+  }
+  .socialmedia-icon img:hover {
+    outline: 1px solid black;
+  }
+
+  /* ------------- first page  photos   -------*/
+  .photocategories1,
+  .wrapping-categories,
+  .babybump-categories,
+  .retouch-categories,
+  .nature-categories,
+  .Product-categories {
+    width: 80%;
+    margin: auto;
+  }
+
+  .photoz-Container {
+    margin-top: 10px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .studio-photoz {
+    position: relative;
+    width: calc(40% - 5px);
+    /* Adjust width based on the number of items per row */
+
+    height: 250px;
+    max-width: 600px;
+    max-height: 500px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .studio-photoz img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+    object-position: top;
+
+    cursor: pointer;
+    transition: 1s;
+  }
+
+  .icon-picsphoto img {
+    width: 50px;
+    background-color: #55555560;
+  }
+  .container1 {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    margin: 20px auto;
+    width: 80%;
+  }
+
+  .photo-container {
+    position: relative;
+    margin: 10px 10px;
+    width: 80%;
+    height: auto;
+    overflow: hidden;
+  }
+  .photo-container img {
+    box-shadow: 2px 4px 6px gray;
+    width: 100%;
+    height: auto;
+  }
+  .photo-container p {
+    width: 100%;
+    height: auto;
+    background-color: rgba(0, 0, 0, 0.411);
+    font-size: 20px;
+    color: aliceblue;
+    text-align: center;
+    top: 140%;
+    position: absolute; /* Position the text */
+    left: 50%; /* Center horizontally */
+    transform: translate(-50%, -50%); /* Center the text precisely */
+    cursor: pointer;
+    opacity: 1;
+    transition: top 1s ease; /* Add smooth transition for opacity change */
+  }
+
+  .photo-container:hover p {
+    top: 50%;
+    border-radius: 10px;
+  }
+
+  /*cover footer for home page*/
+  .footerCover {
+    width: 100%;
+    height: 20vh;
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 10px;
+  }
+
+  .foot {
+    width: auto;
+    height: 35px;
+    display: flex;
+    background-color: #555;
+    align-items: center;
+    align-content: center;
+    margin: auto;
+  }
+  .foot p {
+    font-size: 13px;
+    text-align: center;
+    margin: auto;
+  }
+  .social-media-icons {
+    display: flex;
+    margin: 5px;
+    line-height: 40px;
+  }
+  .social-media-icons a {
+    display: flex;
+    width: 20px;
+    margin: 10px;
+    line-height: 30px;
+  }
+
+  .social-media-icons img {
+    height: 25px;
+    width: auto;
+
+    margin: 4px;
+    cursor: pointer;
+  }
+
+  /* --------wedding  photo page ====-------------------*/
+  #types-of-photography {
+    display: flex;
+    width: 80%;
+    margin: auto;
+    height: 20px;
+    justify-content: space-between;
+  }
+  #types-of-photography button {
+    width: auto;
+    height: 20px;
+    line-height: 20px;
+    cursor: pointer;
+
+    font-size: 11px;
+    font-weight: bolder;
+    color: rgb(255, 255, 255);
+
+    text-transform: uppercase;
+  }
+  .types-of-wedding {
+    width: 100%;
+    height: 20px;
+    background-color: rgb(114, 113, 112);
+    display: flex;
+  }
+  .types-of-wedding {
+    width: 100%;
+    height: 40px;
+    background-color: rgb(114, 113, 112);
+    display: flex;
+    justify-content: space-between;
+    overflow: hidden;
+    margin: auto;
+  }
+  .types-of-wedding button {
+    background-color: rgb(114, 113, 112);
+    width: auto;
+    height: 40px;
+    margin: auto 10px;
+    cursor: pointer;
+    border: none;
+    font-size: 13px;
+    color: white;
+    line-height: 50px;
+    justify-content: space-between;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+  }
+  #weddingAll {
+    background-color: #000000;
+  }
+
+  /*-------wedding photoz displays */
+  .Wedding-type-container {
+    width: 100%;
+    position: relative;
+    margin: 20px auto;
+  }
+  .wedding-Container-all,
+  .wedding-alone,
+  .engagement,
+  .video-container {
+    width: 80%;
+    margin: auto;
+  }
+
+  .wedding-Container {
+    margin-top: 10px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .wedding-photos {
+    position: relative;
+    width: calc(50% - 5px);
+    /* Adjust width based on the number of items per row */
+
+    height: 270px;
+    max-width: 600px;
+    max-height: 500px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .icon-pic img {
+    width: 60px;
+    background-color: #55555575;
+    transition: 0.5s;
+  }
+  /* ---studio Photography showing differnt categories */
+  /*banner*/
+  .wallpaper {
+    width: 100%;
+    height: 20vh;
+  }
+  /*-------------booking page --------------*/
+  .booking-container {
+    width: 100%;
+
+    display: flex;
+    margin: 2px;
+  }
+
+  .Wedding-bookings {
+    width: 100%;
+    border-bottom: 1px solid black;
+    margin: auto;
+    padding: 2px 2px;
+    margin: 2px 2px;
+  }
+  .booking-reply {
+    width: 40%;
+
+    text-align: center;
+    padding: 10px 10px;
+  }
+  .lastchildP p {
+    font-size: 13px;
+  }
+
+  /*--------contact page responsive--------------------------*/
+  .getinTouch h1 {
+    text-align: center;
+    font-size: 25px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+  }
+  .get-in-touch-container {
+    margin: 10px;
+    display: block;
+  }
+  .intouch-container {
+    width: 100%;
+  }
+  #Intouch-Message-text-area {
+    width: 100%;
+    height: 90px;
+  }
+  #email1,
+  #Subject {
+    width: 100%;
+  }
+  .name-phone {
+    width: 100%;
+    display: block;
+  }
+  #name,
+  #phone-number {
+    width: 100%;
+    height: 30px;
+    padding: 5px;
+    margin: 10px 5px;
+  }
+  .address {
+    width: 100%;
+    font-size: 18px;
+
+    padding-left: 2%;
+  }
+  #socialmedia-icon a {
+    margin: auto 5px;
+  }
+  #socialmedia-icon img {
+    width: 20px;
+    margin: 2px 5px;
+    cursor: pointer;
+    transition: 0.5s;
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 5px;
+  }
+  .map {
+    width: 95%;
+    height: auto;
+    margin: 20px auto;
+    box-shadow: 1px 2px 5px rgba(139, 139, 139, 0.541);
+  }
+
+  .mapouter {
+    position: relative;
+    text-align: right;
+    width: 100%;
+    height: 400px; /* You can adjust the height as needed */
+  }
+  .gmap_canvas {
+    overflow: hidden;
+    background: none !important;
+    width: 100%;
+    height: 100%;
+  }
+  .gmap_iframe {
+    width: 100%;
+    height: 100%;
+  }
+
+  .mapouter {
+    height: 300px; /* Adjust the height for smaller screens if necessary */
+  }
+  /*--------------Aboou page----------------------------*/
+  .header-text-about {
+    width: 100%;
+  }
+
+  .header-text-about p {
+    font-size: 24px;
+  }
+  .mission-content {
+    display: block;
+
+    width: 90%;
+  }
+  .aboutabout {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+  .aboutmission {
+    margin-top: 30px;
+  }
+  .mission p {
+    width: 100%;
+    font-size: 18px;
+    color: #141414;
+  }
+  .mission-photo {
+    width: 100%;
+    height: auto;
+  }
+  .mission-photo img {
+    width: 100%;
+  }
+  /*full image preview  both wedding and studio*/
+  .full-image-preview {
+    padding-top: 2%;
+  }
+  full-image-preview span {
+    height: 30px;
+  }
+  .close-btn img {
+    margin-right: 5%;
+    width: 30px;
+  }
+  .prev,
+  .next {
+    color: rgb(255, 254, 254);
+    font-size: 40px;
+  }
+  .prev {
+    left: 10px;
+  }
+
+  .next {
+    right: 10px;
+  }
+}
+
+/*---------------------375px-----------------------------------------------*/
+
+@media (max-width: 375px) {
+  #navbar-container {
+    height: 60vh;
+  }
+
+  .navbar {
+    width: 100%;
+    display: block;
+
+    border-radius: 5px;
+
+    font-size: 20px;
+    font-weight: 400;
+  }
+  .menu-icon {
+    position: absolute;
+    top: 8%;
+    left: 90%;
+    transform: translate(-50%, -50%);
+    align-self: flex-end;
+    z-index: 1002;
+  }
+
+  .logo {
+    position: absolute;
+    width: 200px;
+    font-family: crossorigin;
+    text-decoration: none;
+    list-style: none;
+    color: rgb(0, 0, 0);
+    font-size: 16px;
+    line-height: 60px;
+    padding: 0;
+    font-weight: bold;
+    z-index: 1001;
+  }
+
+  .nav-link {
+    width: 100%;
+    display: none;
+
+    width: 100%;
+
+    background-color: rgb(216, 216, 216);
+  }
+  .header-text {
+    width: 80%;
+  }
+
+  .wedding-header-text {
+    width: 80%;
+    font-size: 40px;
+    top: 40%;
+  }
+
+  .header-text h1 {
+    font-size: 30px;
+    color: maroon;
+    font-weight: 800;
+  }
+  .header-text p {
+    margin-top: 20px;
+    font-size: 13px;
+    color: white;
+  }
+  .pagebtn-wedding button {
+    background: transparent;
+    color: rgb(0, 0, 0);
+    width: 200px;
+    height: 70px;
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.5s;
+    outline: none;
+  }
+  .pagebtn {
+    position: absolute;
+    top: 85%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .pagebtn button {
+    background-color: transparent;
+    border: solid black 2px;
+    color: whitesmoke;
+    width: 150px;
+    height: 40px;
+
+    text-transform: uppercase;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.5s;
+    outline: none;
+    border-radius: 20px;
+  }
+  .pagebtn button a {
+    color: rgb(0, 0, 0);
+    font-size: 18px;
+  }
+
+  #types-of-photography {
+    display: flex;
+    width: 100%;
+    margin: auto;
+    height: 20px;
+    justify-content: space-between;
+  }
+  #types-of-photography button {
+    width: auto;
+    height: 20px;
+    line-height: 20px;
+    cursor: pointer;
+
+    font-size: 10px;
+    font-weight: bolder;
+    color: rgb(255, 255, 255);
+
+    text-transform: uppercase;
+  }
+  .types-of-wedding {
+    width: 100%;
+    height: 20px;
+    background-color: rgb(114, 113, 112);
+    display: flex;
+    font-size: 11px;
+  }
+  .types-of-wedding button {
+    width: 100px;
+    height: 30px;
+    margin: auto 10px;
+    cursor: pointer;
+    border: none;
+    font-size: 11px;
+
+    color: rgb(255, 255, 255);
+    line-height: 40px;
+    justify-content: space-between;
+
+    text-transform: uppercase;
+  }
+  /*-------first home page  displays */
+
+  .container1 {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    margin: 20px auto;
+    width: 90%;
+    height: auto;
+  }
+
+  .photo-container {
+    position: relative;
+    margin: 10px 10px;
+    width: 90%;
+    height: 95%;
+    overflow: hidden;
+    max-width: 600px;
+    max-height: 500px;
+
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+  }
+  .photo-container img {
+    box-shadow: 2px 4px 6px gray;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top;
+  }
+
+  /*-------wedding photoz displays */
+
+  .photocategories1,
+  .studio-photography .wrapping-categories,
+  .babybump-categories,
+  .retouch-categories,
+  .nature-categories,
+  .Product-categories {
+    width: 100%;
+    margin: auto;
+  }
+
+  .photoz-Container {
+    margin-top: 2px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .studio-photoz {
+    position: relative;
+    width: calc(45% - 2px);
+    /* Adjust width based on the number of items per row */
+
+    height: 180px;
+    max-width: 600px;
+    max-height: 500px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .studio-photoz img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+    object-position: top;
+
+    cursor: pointer;
+    transition: 1s;
+  }
+
+  .icon-picsphoto img {
+    width: 50px;
+    background-color: #55555560;
+  }
+  .Wedding-type-container {
+    width: 90%;
+    position: relative;
+    margin: 20px auto;
+  }
+
+  .wedding-Container-all,
+  .wedding-alone,
+  .engagement,
+  .video-container,
+  .wedding-Container {
+    /* Define specific styles for these selectors */
+    width: 100%;
+  }
+
+  .wedding-Container {
+    margin-top: 10px;
+    width: 100%;
+  }
+  .wedding-photos {
+    position: relative;
+    width: calc(50% - 5px);
+    /* Adjust width based on the number of items per row */
+    height: 150px;
+    max-width: 500px;
+    max-height: 500px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .icon-pic img {
+    width: 50px;
+    background-color: #55555575;
+    transition: 0.5s;
+  }
+  /*banner scale*/
+  .wallpaper {
+    width: 100%;
+    height: 20vh;
+  }
+
+  /*-------------booking page --------------*/
+  .bookingfull {
+    width: 95%;
+    margin: 20px auto;
+  }
+  .booking-services {
+    font-size: 20px;
+    text-align: center;
+    font-weight: 400;
+  }
+
+  .bookingrply {
+    font-size: 13px;
+  }
+  .booking-container {
+    width: 100%;
+
+    display: block;
+    margin: 2px;
+  }
+
+  .Wedding-bookings {
+    width: 100%;
+    border-bottom: 1px solid black;
+    margin: auto;
+    padding: 20px 20px;
+    margin: 20px 20px;
+  }
+  .booking-reply {
+    width: 80%;
+    text-align: center;
+    padding: 10px 10px;
+  }
+  .booking-reply h2 {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 20px;
+  }
+  .booking-reply p {
+    font-size: 16px;
+  }
+
+  /*--------contact page responsive--------------------------*/
+  .getinTouch h1 {
+    text-align: center;
+    font-size: 25px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+  }
+  .get-in-touch-container {
+    margin: 10px;
+    display: block;
+  }
+  .intouch-container {
+    width: 100%;
+  }
+  #Intouch-Message-text-area {
+    width: 100%;
+    height: 90px;
+  }
+  #email1,
+  #Subject {
+    width: 100%;
+  }
+  .name-phone {
+    width: 100%;
+    display: block;
+  }
+  #name,
+  #phone-number {
+    width: 100%;
+    height: 30px;
+    padding: 5px;
+    margin: 10px 5px;
+  }
+  .address {
+    width: 100%;
+    font-size: 18px;
+
+    padding-left: 2%;
+  }
+
+  #pagesocialmediaicons {
+    position: absolute;
+    top: 70%;
+    left: 70%;
+    transform: translate(-50%, -50%);
+
+    height: auto;
+    display: flex;
+    margin: auto;
+    width: 80%;
+    align-items: center;
+    align-self: center;
+    align-content: center;
+  }
+  #pagesocialmediaicons a {
+    display: flex;
+    flex-wrap: nowrap;
+    margin: 30px 2px;
+  }
+
+  #socialmedia-icon a {
+    margin: auto 5px;
+  }
+  #socialmedia-icon img {
+    width: 20px;
+    margin: 2px 5px;
+    cursor: pointer;
+    transition: 0.5s;
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 5px;
+  }
+  .map {
+    width: 95%;
+    height: auto;
+    margin: 20px auto;
+    box-shadow: 1px 2px 5px rgba(139, 139, 139, 0.541);
+  }
+
+  .mapouter {
+    position: relative;
+    text-align: right;
+    width: 100%;
+    height: 400px; /* You can adjust the height as needed */
+  }
+  .gmap_canvas {
+    overflow: hidden;
+    background: none !important;
+    width: 100%;
+    height: 100%;
+  }
+  .gmap_iframe {
+    width: 100%;
+    height: 100%;
+  }
+  .mapouter {
+    height: 300px; /* Adjust the height for smaller screens if necessary */
+  }
+  /*--------------About page----------------------------*/
+  .header-text-about {
+    width: 100%;
+  }
+  .mission-content {
+    display: block;
+
+    width: 100%;
+    box-shadow: none;
+  }
+  .aboutabout {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+  .aboutmission {
+    margin-top: 30px;
+  }
+  .mission h2 {
+    font-size: 30px;
+  }
+  .mission h2 span {
+    font-size: 31px;
+    color: #580606;
+  }
+  .mission p {
+    width: 100%;
+    font-size: 15px;
+    color: #141414;
+  }
+  .mission-photo {
+    width: 100%;
+    height: auto;
+  }
+  .mission-photo img {
+    width: 100%;
+  }
+  /*cover footer for home page*/
+  .footerCover {
+    width: 100%;
+    height: 20vh;
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 10px;
+  }
+
+  .foot {
+    width: auto;
+    height: 30px;
+    display: flex;
+    background-color: #555;
+    align-items: center;
+    align-content: center;
+    margin: auto;
+  }
+  .foot p {
+    font-size: 11px;
+    text-align: center;
+    margin: auto;
+  }
+  .social-media-icons {
+    display: flex;
+  }
+  .social-media-icons a {
+    display: flex;
+    width: 20px;
+    margin: 3px;
+    line-height: 30px;
+  }
+
+  .social-media-icons img {
+    height: 18px;
+    width: auto;
+
+    margin: 4px;
+    cursor: pointer;
+  }
+
+  /*full image preview  both wedding and studio*/
+  .full-image-previe {
+    top: 0;
+  }
+  full-image-preview span {
+    height: 15px;
+  }
+  .close-btn img {
+    margin-right: 5%;
+    width: 25px;
+  }
+  .prev,
+  .next {
+    color: rgb(0, 0, 0);
+    font-size: 35px;
+  }
+  .prev {
+    left: 18px;
+  }
+
+  .next {
+    right: 18px;
+  }
+}

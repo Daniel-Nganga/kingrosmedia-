@@ -1,0 +1,622 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="style1.css" />
+    <link rel="stylesheet" href="style2.css" />
+    <link rel="stylesheet" href="reviews.css" />
+    <link rel="stylesheet" href="Mediaquery.css" />
+    <!--stars-------------->
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <title>Kingros Media</title>
+  </head>
+  <body>
+    <div class="container-wedding">
+      <nav class="navbar">
+        <label class="logo"> Kingros Media</label>
+        <ul class="nav-link" id="nav-link">
+          <li class="nav-links">
+            <a href="index.html">Home</a>
+          </li>
+          <li class="nav-links service-dropdown">
+            <a href="">Services</a>
+            <ul class="drop-down">
+              <li>
+                <a href="indexwedding.html">Wedding Photography</a>
+              </li>
+              <li>
+                <a href="indexPhotography.html">Studio Photography</a>
+              </li>
+              <li>
+                <a href="">Live Streaming</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-links">
+            <a href="indexAbout.html">About</a>
+          </li>
+          <li class="nav-links">
+            <a href="indexContact.html">contact</a>
+          </li>
+          <li class="nav-links">
+            <a href="">Blogs</a>
+          </li>
+          <li class="nav-links">
+            <a href="indexbooking.html">Booking</a>
+          </li>
+        </ul>
+        <div class="arrows">
+          <button class="back-arrow" onclick="coverBackArrow()">&#8249;</button>
+          <button class="next-arrow" onclick="coverNextArrow()">&#8250;</button>
+        </div>
+      </nav>
+
+      <div class="menu-icon" id="menu-icon-wedding">
+        <img
+          onclick="downMenu()"
+          id="menuNav"
+          src="/Images/menuicon.png"
+          alt=""
+        />
+      </div>
+
+      <div class="header-text wedding-header-text">
+        <h1>Wedding videography & Photography</h1>
+        <div
+          class="socialmedia-icon socialmediaicons"
+          id="pagesocialmediaicons"
+        >
+          <a href="https://web.facebook.com/stephen.kimuhu.1" target="_blank"
+            ><img src="./Images/facebook.png" alt=""
+          /></a>
+
+          <a href="https://www.instagram.com/kingros_media/" target="_blank">
+            <img src="./Images/instagram image.png" alt=""
+          /></a>
+
+          <a href="https://www.youtube.com/@kingrosmedia4949" target="_blank">
+            <img src="./Images/youtube4.png" alt=""
+          /></a>
+        </div>
+      </div>
+
+      <div class="pagebtn-wedding">
+        <button><a href="indexbooking.html"> Inquire About Wedding </a></button>
+      </div>
+    </div>
+
+    <section>
+      <div class="types-of-wedding">
+        <button id="weddingAll">All</button>
+        <button id="wedding_Photos">Wedding</button>
+        <button id="Wedding-Engagement">Engagement</button>
+        <button id="wedding-videography">Videography</button>
+      </div>
+      <!-- Full Weddinf Image Preview Container -->
+      <div class="full-image-preview">
+        <span class="close-btn" onclick="closePreview()"
+          ><img src="./Images/Close.png" alt=""
+        /></span>
+        <img id="fullImage" src="" alt="" />
+        <button class="prev" onclick="prevWeddingImage()">&#10094;</button>
+        <button class="next" onclick="nextWeddingImage()">&#10095;</button>
+      </div>
+
+      <div class="Wedding-type-container">
+        <div class="wedding-Container-all" id="wedding-all-container">
+          <div class="wedding-Container">
+            <div class="wedding-photos">
+              <img src="/Images/Wedding36.jpg" alt="" />
+              <div class="icon-pic" onclick="WeddingPreview(0)">
+                <img src="/Images/arrow.png" alt="" />
+              </div>
+            </div>
+            <div class="wedding-photos">
+              <img src="/Images/Wedding15.jpg" alt="" />
+              <div class="icon-pic" onclick="WeddingPreview(1)">
+                <img src="/Images/arrow.png" alt="" />
+              </div>
+            </div>
+            <div class="wedding-photos">
+              <img src="/Images/Wedding10.jpg" alt="" />
+              <div class="icon-pic" onclick="WeddingPreview(2)">
+                <img src="/Images/arrow.png" alt="" />
+              </div>
+            </div>
+            <div class="wedding-photos">
+              <img src="/Images/Wedding11.jpg" alt="" />
+              <div class="icon-pic" onclick="WeddingPreview(3)">
+                <img src="/Images/arrow.png" alt="" />
+              </div>
+            </div>
+            <div class="wedding-photos">
+              <img src="/Images/Wedding34.jpg" alt="" />
+              <div class="icon-pic" onclick="WeddingPreview(4)">
+                <img src="/Images/arrow.png" alt="" />
+              </div>
+            </div>
+            <div class="wedding-photos">
+              <img src="/Images/Wedding36.jpg" alt="" />
+              <div class="icon-pic" onclick="WeddingPreview(5)">
+                <img src="/Images/arrow.png" alt="" />
+              </div>
+            </div>
+            <div class="wedding-photos">
+              <img src="/Images/Wedding6.jpg" alt="" />
+              <div class="icon-pic" onclick="WeddingPreview(6)">
+                <img src="/Images/arrow.png" alt="" />
+              </div>
+            </div>
+
+            <div class="wedding-photos">
+              <img src="/Images/Wedding13.jpg" alt="" />
+              <div class="icon-pic" onclick="WeddingPreview(7)">
+                <img src="/Images/arrow.png" alt="" />
+              </div>
+            </div>
+
+            <div class="wedding-photos">
+              <img src="/Images/Wedding6.jpg" alt="" />
+              <div class="icon-pic" onclick="WeddingPreview(8)">
+                <img src="/Images/arrow.png" alt="" />
+              </div>
+            </div>
+            <div class="wedding-photos">
+              <img src="/Images/Wedding46.jpg" alt="" />
+              <div class="icon-pic" onclick="WeddingPreview(9)">
+                <img src="/Images/arrow.png" alt="" />
+              </div>
+            </div>
+
+            <div class="wedding-photos">
+              <img src="/Images/Wedding23.jpg" alt="" />
+              <div class="icon-pic" onclick="WeddingPreview(10)">
+                <img src="/Images/arrow.png" alt="" />
+              </div>
+            </div>
+            <div class="wedding-photos">
+              <img src="/Images/Wedding27.jpg" alt="" />
+              <div class="icon-pic" onclick="WeddingPreview(11)">
+                <img src="/Images/arrow.png" alt="" />
+              </div>
+            </div>
+
+            <div class="wedding-photos">
+              <img src="/Images/Wedding51.jpg" alt="" />
+              <div class="icon-pic" onclick="WeddingPreview(12)">
+                <img src="/Images/arrow.png" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!--creating a template for container for wedding pictures-->
+        <div class="wedding-alone" id="wedding-alone">
+          <div class="wedding-Container">
+            <div class="wedding-photos">
+              <img src="/Images/Wedding15.jpg" alt="" />
+              <div class="icon-pic" onclick="WeddingPreview(13)">
+                <img src="/Images/arrow.png" alt="" />
+              </div>
+            </div>
+            <div class="wedding-photos">
+              <img src="/Images/Wedding10.jpg" alt="" />
+              <div class="icon-pic" onclick="WeddingPreview(14)">
+                <img src="/Images/arrow.png" alt="" />
+              </div>
+            </div>
+            <div class="wedding-photos">
+              <img src="/Images/Wedding11.jpg" alt="" />
+              <div class="icon-pic" onclick="WeddingPreview(15)">
+                <img src="/Images/arrow.png" alt="" />
+              </div>
+            </div>
+            <div class="wedding-photos">
+              <img src="/Images/Wedding34.jpg" alt="" />
+              <div class="icon-pic" onclick="WeddingPreview(16)">
+                <img src="/Images/arrow.png" alt="" />
+              </div>
+            </div>
+            <div class="wedding-photos">
+              <img src="/Images/Wedding36.jpg" alt="" />
+              <div class="icon-pic" onclick="WeddingPreview(17)">
+                <img src="/Images/arrow.png" alt="" />
+              </div>
+            </div>
+            <div class="wedding-photos">
+              <img src="/Images/Wedding6.jpg" alt="" />
+              <div class="icon-pic" onclick="WeddingPreview(18)">
+                <img src="/Images/arrow.png" alt="" />
+              </div>
+            </div>
+
+            <div class="wedding-photos">
+              <img src="/Images/Wedding13.jpg" alt="" />
+              <div class="icon-pic" onclick="WeddingPreview(19)">
+                <img src="/Images/arrow.png" alt="" />
+              </div>
+            </div>
+
+            <div class="wedding-photos">
+              <img src="/Images/Wedding6.jpg" alt="" />
+              <div class="icon-pic" onclick="WeddingPreview(20)">
+                <img src="/Images/arrow.png" alt="" />
+              </div>
+            </div>
+            <div class="wedding-photos">
+              <img src="/Images/Wedding46.jpg" alt="" />
+              <div class="icon-pic" onclick="WeddingPreview(21)">
+                <img src="/Images/arrow.png" alt="" />
+              </div>
+            </div>
+
+            <div class="wedding-photos">
+              <img src="/Images/Wedding23.jpg" alt="" />
+              <div class="icon-pic" onclick="WeddingPreview(22)">
+                <img src="/Images/arrow.png" alt="" />
+              </div>
+            </div>
+            <div class="wedding-photos">
+              <img src="/Images/Wedding27.jpg" alt="" />
+              <div class="icon-pic" onclick="WeddingPreview(23)">
+                <img src="/Images/arrow.png" alt="" />
+              </div>
+            </div>
+
+            <div class="wedding-photos">
+              <img src="/Images/Wedding51.jpg" alt="" />
+              <div class="icon-pic" onclick="WeddingPreview(24)">
+                <img src="/Images/arrow.png" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--creating a template for container for engagement-->
+        <div class="engagement" id="engagement">
+          <div class="wedding-Container">
+            <div class="wedding-photos">
+              <img src="/Images/f7.jpg" alt="" />
+              <div class="icon-pic" onclick="WeddingPreview(25)">
+                <img src="/Images/arrow.png" alt="" />
+              </div>
+            </div>
+            <div class="wedding-photos">
+              <img src="/Images/f8.jpg" alt="" />
+              <div class="icon-pic" onclick="WeddingPreview(26)">
+                <img src="/Images/arrow.png" alt="" />
+              </div>
+            </div>
+            <div class="wedding-photos">
+              <img src="/Images/f10.jpg" alt="" />
+              <div class="icon-pic" onclick="WeddingPreview(27)">
+                <img src="/Images/arrow.png" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- creating a template container for video-->
+        <div class="video-container" id="video-container">
+          <div class="video-container-template">
+            <div class="videos-template">
+              <iframe
+                src="https://www.youtube.com/embed/GVhCWVw-A6o?si=zRrlxenLkKbhT-B3"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen
+              ></iframe>
+            </div>
+
+            <div class="videos-template">
+              <iframe
+                src="https://www.youtube.com/embed/hIUBYwgFqw8?si=8kPbkW8ZJQAe-odT"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen
+              ></iframe>
+            </div>
+
+            <div class="videos-template">
+              <iframe
+                src="https://www.youtube.com/embed/lB-xBekeShU?si=CGedM9qjCNdrNDpW"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen
+              ></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="pricing">
+      <h5>Extraordinary events begins here</h5>
+      <button onclick="bookingShoot()">Book Your Session</button>
+    </div>
+    <!--Testimonials---------------------------->
+    <section id="Testimonials">
+      <!--heading-------------------------->
+      <div class="customer-reviews-heading">
+        <span>Comments</span>
+        <h1>Clients Says</h1>
+      </div>
+
+      <!--testimonial box container---------------------------->
+      <div class="Testimonial-box-container" id="Testimonial-box-container">
+        <!--box 1--------------------------------->
+
+        <div class="testimanial-box" id="testimanial-box">
+          <!--Top of of reviews----------------------->
+          <div class="box-top" id="box-top">
+            <!--profile---------------------->
+            <div class="profile" id="profile">
+              <!--img-->
+              <div class="profile-img" id="profile-img">
+                <img src="/Images/DSC_1748.jpg" alt="" />
+              </div>
+              <!--name and user-------------------->
+              <div class="name-user" id="name-user">
+                <strong>Daniel Kamau</strong>
+                <span>@danielMauka</span>
+              </div>
+            </div>
+            <!--reviews------------------>
+            <div class="reviews" id="reviews">
+              <i class="fa fa-star checked"></i>
+              <i class="fa fa-star checked"></i>
+              <i class="fa fa-star checked"></i>
+              <i class="fa fa-star checked"></i>
+              <i class="fa fa-star"></i>
+            </div>
+          </div>
+
+          <!--comments----------------------->
+          <div class="client-comments" id="client-comments">
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis
+              impedit modi fugit quos maiores doloremque enim deleniti, sunt
+              dolorum cum amet consequuntur dolor, accusamus suscipit!
+              Repudiandae id iste praesentium eveniet?
+            </p>
+          </div>
+        </div>
+
+        <!--box 2--------------------------------->
+
+        <div class="testimanial-box" id="testimanial-box">
+          <!--Top of of reviews----------------------->
+          <div class="box-top" id="box-top">
+            <!--profile---------------------->
+            <div class="profile" id="profile">
+              <!--img-->
+              <div class="profile-img" id="profile-img">
+                <img src="/Images/studio5.jpg" alt="" />
+              </div>
+              <!--name and user-------------------->
+              <div class="name-user" id="name-user">
+                <strong>cathline Kimani</strong>
+                <span>@cateheri</span>
+              </div>
+            </div>
+            <!--reviews------------------>
+            <div class="reviews" id="reviews">
+              <i class="fa fa-star checked"></i>
+              <i class="fa fa-star checked"></i>
+              <i class="fa fa-star checked"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+            </div>
+          </div>
+
+          <!--comments----------------------->
+          <div class="client-comments" id="client-comments">
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis
+              impedit modi fugit quos maiores doloremque enim deleniti, sunt
+              dolorum cum amet consequuntur dolor, accusamus suscipit!
+              Repudiandae id iste praesentium eveniet?
+            </p>
+          </div>
+        </div>
+
+        <div class="hidden-testimonials" id="hidden-testimonials">
+          <!--box 3--------------------------------->
+
+          <div class="testimanial-box" id="testimanial-box">
+            <!--Top of of reviews----------------------->
+            <div class="box-top" id="box-top">
+              <!--profile---------------------->
+              <div class="profile" id="profile">
+                <!--img-->
+                <div class="profile-img" id="profile-img">
+                  <img src="/Images/IMG_9060.jpg" alt="" />
+                </div>
+                <!--name and user-------------------->
+                <div class="name-user" id="name-user">
+                  <strong>Stephen Kimani</strong>
+                  <span>@kimanimugo</span>
+                </div>
+              </div>
+              <!--reviews------------------>
+              <div class="reviews" id="reviews">
+                <i class="fa fa-star checked"></i>
+                <i class="fa fa-star checked"></i>
+                <i class="fa fa-star checked"></i>
+                <i class="fa fa-star checked"></i>
+                <i class="fa fa-star checked"></i>
+              </div>
+            </div>
+
+            <!--comments----------------------->
+            <div class="client-comments" id="client-comments">
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis
+                impedit modi fugit quos maiores doloremque enim deleniti, sunt
+                dolorum cum amet consequuntur dolor, accusamus suscipit!
+                Repudiandae id iste praesentium eveniet?
+              </p>
+            </div>
+          </div>
+          <!--box 4--------------------------------->
+
+          <div class="testimanial-box" id="testimanial-box">
+            <!--Top of of reviews----------------------->
+            <div class="box-top" id="box-top">
+              <!--profile---------------------->
+              <div class="profile" id="profile">
+                <!--img-->
+                <div class="profile-img" id="profile-img">
+                  <img src="/Images/IMG_9060.jpg" alt="" />
+                </div>
+                <!--name and user-------------------->
+                <div class="name-user" id="name-user">
+                  <strong>Stephen Kimani</strong>
+                  <span>@kimanimugo</span>
+                </div>
+              </div>
+              <!--reviews------------------>
+              <div class="reviews" id="reviews">
+                <i class="fa fa-star checked"></i>
+                <i class="fa fa-star checked"></i>
+                <i class="fa fa-star checked"></i>
+                <i class="fa fa-star checked"></i>
+                <i class="fa fa-star checked"></i>
+              </div>
+            </div>
+
+            <!--comments----------------------->
+            <div class="client-comments" id="client-comments">
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis
+                impedit modi fugit quos maiores doloremque enim deleniti, sunt
+                dolorum cum amet consequuntur dolor, accusamus suscipit!
+                Repudiandae id iste praesentium eveniet?
+              </p>
+            </div>
+          </div>
+
+          <!--box 5--------------------------------->
+
+          <div class="testimanial-box" id="testimanial-box">
+            <!--Top of of reviews----------------------->
+            <div class="box-top" id="box-top">
+              <!--profile---------------------->
+              <div class="profile" id="profile">
+                <!--img-->
+                <div class="profile-img" id="profile-img">
+                  <img src="/Images/IMG_9060.jpg" alt="" />
+                </div>
+                <!--name and user-------------------->
+                <div class="name-user" id="name-user">
+                  <strong>Stephen Kimani</strong>
+                  <span>@kimanimugo</span>
+                </div>
+              </div>
+              <!--reviews------------------>
+              <div class="reviews" id="reviews">
+                <i class="fa fa-star checked"></i>
+                <i class="fa fa-star checked"></i>
+                <i class="fa fa-star checked"></i>
+                <i class="fa fa-star checked"></i>
+                <i class="fa fa-star checked"></i>
+              </div>
+            </div>
+
+            <!--comments----------------------->
+            <div class="client-comments" id="client-comments">
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis
+                impedit modi fugit quos maiores doloremque enim deleniti, sunt
+                dolorum cum amet consequuntur dolor, accusamus suscipit!
+                Repudiandae id iste praesentium eveniet?
+              </p>
+            </div>
+          </div>
+
+          <!--box 6--------------------------------->
+
+          <div class="testimanial-box" id="testimanial-box">
+            <!--Top of of reviews----------------------->
+            <div class="box-top" id="box-top">
+              <!--profile---------------------->
+              <div class="profile" id="profile">
+                <!--img-->
+                <div class="profile-img" id="profile-img">
+                  <img src="/Images/IMG_9060.jpg" alt="" />
+                </div>
+                <!--name and user-------------------->
+                <div class="name-user" id="name-user">
+                  <strong>Stephen Kimani</strong>
+                  <span>@kimanimugo</span>
+                </div>
+              </div>
+              <!--reviews------------------>
+              <div class="reviews" id="reviews">
+                <i class="fa fa-star checked"></i>
+                <i class="fa fa-star checked"></i>
+                <i class="fa fa-star checked"></i>
+                <i class="fa fa-star checked"></i>
+                <i class="fa fa-star checked"></i>
+              </div>
+            </div>
+
+            <!--comments----------------------->
+            <div class="client-comments" id="client-comments">
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis
+                impedit modi fugit quos maiores doloremque enim deleniti, sunt
+                dolorum cum amet consequuntur dolor, accusamus suscipit!
+                Repudiandae id iste praesentium eveniet?
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="more-reviews" id="more-reviews">
+        <button onclick="moreReviews()">More Reviews >></button>
+      </div>
+    </section>
+
+    <hr />
+    <footer>
+      <div class="foot">
+        <p>Copyright &COPY; 2024 All rights reserved</p>
+        <div class="social-media-icons">
+          <a
+            href="https://web.facebook.com/stephen.kimuhu.1"
+            target="_blank"
+            rel="noopener noreferrer"
+            ><img src="./Images/facebook.png" alt=""
+          /></a>
+
+          <a href="https://www.instagram.com/kingros_media/" target="_blank">
+            <img src="./Images/instagram.png" alt=""
+          /></a>
+          <a href="https://www.youtube.com/@kingrosmedia4949" target="_blank">
+            <img src="./Images/youtube2.png" alt=""
+          /></a>
+
+          <a
+            href="https://youpic.com/danielmauka"
+            target="_blank"
+            rel="noopener noreferrer"
+            ><img src="./Images/youpic.png" alt=""
+          /></a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="javascriptWedding.js"></script>
+    <script src="javascript1.js"></script>
+    <script src="javascript.js"></script>
+  </body>
+</html>

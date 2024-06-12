@@ -1,0 +1,597 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style1.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="style2.css" />
+    <link rel="stylesheet" href="reviews.css" />
+    <link rel="stylesheet" href="Mediaquery.css" />
+    <title>Kingros Media</title>
+  </head>
+  <body>
+    <div class="photographyCover">
+      <nav class="navbar">
+        <label class="logo"> Kingros Media</label>
+        <ul class="nav-link" id="nav-link">
+          <li class="nav-links">
+            <a href="index.html">Home</a>
+          </li>
+          <li class="nav-links service-dropdown">
+            <a href="">Services</a>
+            <ul class="drop-down">
+              <li>
+                <a href="indexwedding.html">Wedding Photography</a>
+              </li>
+              <li>
+                <a href="indexPhotography.html">Studio Photography</a>
+              </li>
+              <li>
+                <a href="">Live Streaming</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-links">
+            <a href="indexAbout.html">About</a>
+          </li>
+          <li class="nav-links">
+            <a href="indexContact.html">contact</a>
+          </li>
+          <li class="nav-links">
+            <a href="">Blogs</a>
+          </li>
+          <li class="nav-links">
+            <a href="indexbooking.html">Booking</a>
+          </li>
+        </ul>
+        <div class="arrows">
+          <button class="back-arrow" onclick="coverBackArrow()">&#8249;</button>
+          <button class="next-arrow" onclick="coverNextArrow()">&#8250;</button>
+        </div>
+      </nav>
+
+      <div class="menu-icon">
+        <img
+          onclick="downMenu()"
+          id="menuNav"
+          src="/Images/menuicon.png"
+          alt=""
+        />
+      </div>
+      <!--
+      <div class="image-buttons">
+        <button class="selected" onclick="selectCoverImage(0)"></button>
+        <button class="selected" onclick="selectCoverImage(1)"></button>
+        <button class="selected" onclick="selectCoverImage(2)"></button>
+      </div>
+      -->
+      <div class="header-text studio-header-text">
+        <h1>Studio Photography</h1>
+        <p>
+          We are team of passionate and commited to produce highy quality <br />
+          and change the narrative that highy quality photography <br />
+          is very expensive.
+        </p>
+      </div>
+
+      <div class="pagebtn-wedding" id="studioPage">
+        <button><a href=""> Inquire About Photography </a></button>
+      </div>
+    </div>
+
+    <div class="containerCategories">
+      <div class="types-of-wedding" id="types-of-photography">
+        <button id="studio">Studio</button>
+        <button id="wrapping">Wrapping</button>
+        <button id="babyBump">BabyBump</button>
+        <button id="retouch">Retouch</button>
+        <button id="Product">Product</button>
+        <button id="nature">Nature</button>
+      </div>
+      <!-- Full Image Preview Container -->
+      <div class="full-image-preview">
+        <span class="close-btn" onclick="closePreview()">X</span>
+        <img id="fullImage" src="" alt="" />
+        <button class="prev" onclick="prevImage()">&#10094;</button>
+        <button class="next" onclick="nextImage()">&#10095;</button>
+      </div>
+      <!--all Photography container-->
+      <div class="photocategories1">
+        <!--studio Photography container-->
+        <div class="studio-photography" id="studio-photography">
+          <div class="photoz-Container">
+            <div class="studio-photoz">
+              <img src="/Images/studio.jpg" alt="" />
+              <div class="icon-picsphoto" onclick="openFullPreview(0)">
+                <img src="/Images/arrow.png" alt="" />
+              </div>
+            </div>
+
+            <div class="studio-photoz">
+              <img src="/Images/studio2.jpg" alt="" />
+              <div class="icon-picsphoto" onclick="openFullPreview(1)">
+                <img src="/Images/arrow.png" alt="" />
+              </div>
+            </div>
+
+            <div class="studio-photoz">
+              <img src="/Images/studio5.jpg" alt="" />
+              <div class="icon-picsphoto" onclick="openFullPreview(2)">
+                <img src="/Images/arrow.png" alt="" />
+              </div>
+            </div>
+
+            <div class="studio-photoz">
+              <img src="/Images/studio2.jpg" alt="" />
+              <div class="icon-picsphoto" onclick="openFullPreview(3)">
+                <img src="/Images/arrow.png" alt="" />
+              </div>
+            </div>
+
+            <div class="studio-photoz">
+              <img src="/Images/studio1.jpg" alt="" />
+              <div class="icon-picsphoto" onclick="openFullPreview(4)">
+                <img src="/Images/arrow.png" alt="" />
+              </div>
+            </div>
+
+            <div class="studio-photoz">
+              <img src="/Images/studio5.jpg" alt="" />
+              <div class="icon-picsphoto" onclick="openFullPreview(5)">
+                <img src="/Images/arrow.png" alt="" />
+              </div>
+            </div>
+
+            <div class="studio-photoz">
+              <img src="/Images/studio6.jpg" alt="" />
+              <div class="icon-picsphoto" onclick="openFullPreview(6)">
+                <img src="/Images/arrow.png" alt="" />
+              </div>
+            </div>
+
+            <div class="studio-photoz">
+              <img src="/Images/studio12.jpg" alt="" />
+              <div class="icon-picsphoto" onclick="openFullPreview(7)">
+                <img src="/Images/arrow.png" alt="" />
+              </div>
+            </div>
+
+            <div class="studio-photoz">
+              <img src="/Images/studio9.jpg" alt="" />
+              <div class="icon-picsphoto" onclick="openFullPreview(8)">
+                <img src="/Images/arrow.png" alt="" />
+              </div>
+            </div>
+
+            <div class="studio-photoz">
+              <img src="/Images/studio8.jpg" alt="" />
+              <div class="icon-picsphoto" onclick="openFullPreview(9)">
+                <img src="/Images/arrow.png" alt="" />
+              </div>
+            </div>
+
+            <div class="studio-photoz">
+              <img src="/Images/studio10.jpg" alt="" />
+              <div class="icon-picsphoto" onclick="openFullPreview(10)">
+                <img src="/Images/arrow.png" alt="" />
+              </div>
+            </div>
+
+            <div class="studio-photoz">
+              <img src="/Images/studio11.jpg" alt="" />
+              <div class="icon-picsphoto" onclick="openFullPreview(11)">
+                <img src="/Images/arrow.png" alt="" />
+              </div>
+            </div>
+            <div class="studio-photoz">
+              <img src="/Images/studio13.jpg" alt="" />
+              <div class="icon-picsphoto" onclick="openFullPreview(12)">
+                <img src="/Images/arrow.png" alt="" />
+              </div>
+            </div>
+
+            <div class="studio-photoz">
+              <img src="/Images/studio15.jpg" alt="" />
+              <div class="icon-picsphoto" onclick="openFullPreview(13)">
+                <img src="/Images/arrow.png" alt="" />
+              </div>
+            </div>
+
+            <div class="studio-photoz">
+              <img src="/Images/studio14.jpg" alt="" />
+              <div class="icon-picsphoto" onclick="openFullPreview(14)">
+                <img src="/Images/arrow.png" alt="" />
+              </div>
+            </div>
+
+            <div class="studio-photoz">
+              <img src="/Images/studio16.jpg" alt="" />
+              <div class="icon-picsphoto" onclick="openFullPreview(15)">
+                <img src="/Images/arrow.png" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--wrappping photo container-->
+
+      <div class="wrapping-categories" id="wrapping-categories">
+        <div class="photoz-Container">
+          <div class="studio-photoz">
+            <img src="/Images/Wrapping1.jpg" alt="" />
+            <div class="icon-picsphoto" onclick="openFullPreview(16)">
+              <img src="/Images/arrow.png" alt="" />
+            </div>
+          </div>
+
+          <div class="studio-photoz">
+            <img src="/Images/Wrapping6.jpg" alt="" />
+            <div class="icon-picsphoto" onclick="openFullPreview(17)">
+              <img src="/Images/arrow.png" alt="" />
+            </div>
+          </div>
+
+          <div class="studio-photoz">
+            <img src="/Images/Wrapping3.jpg" alt="" />
+            <div class="icon-picsphoto" onclick="openFullPreview(18)">
+              <img src="/Images/arrow.png" alt="" />
+            </div>
+          </div>
+
+          <div class="studio-photoz">
+            <img src="/Images/Wrapping4.jpg" alt="" />
+            <div class="icon-picsphoto" onclick="openFullPreview(19)">
+              <img src="/Images/arrow.png" alt="" />
+            </div>
+          </div>
+
+          <div class="studio-photoz">
+            <img src="/Images/Wrapping5.jpg" alt="" />
+            <div class="icon-picsphoto" onclick="openFullPreview(20)">
+              <img src="/Images/arrow.png" alt="" />
+            </div>
+          </div>
+
+          <div class="studio-photoz">
+            <img src="/Images/Wrapping12.jpg" alt="" />
+            <div class="icon-picsphoto" onclick="openFullPreview(21)">
+              <img src="/Images/arrow.png" alt="" />
+            </div>
+          </div>
+
+          <div class="studio-photoz">
+            <img src="/Images/Wrapping7.jpg" alt="" />
+            <div class="icon-picsphoto" onclick="openFullPreview(22)">
+              <img src="/Images/arrow.png" alt="" />
+            </div>
+          </div>
+
+          <div class="studio-photoz">
+            <img src="/Images/Wrapping8.jpg" alt="" />
+            <div class="icon-picsphoto" onclick="openFullPreview(23)">
+              <img src="/Images/arrow.png" alt="" />
+            </div>
+          </div>
+
+          <div class="studio-photoz">
+            <img src="/Images/Wrapping9.jpg" alt="" />
+            <div class="icon-picsphoto" onclick="openFullPreview(24)">
+              <img src="/Images/arrow.png" alt="" />
+            </div>
+          </div>
+
+          <div class="studio-photoz">
+            <img src="/Images/Wrapping11.jpg" alt="" />
+            <div class="icon-picsphoto" onclick="openFullPreview(25)">
+              <img src="/Images/arrow.png" alt="" />
+            </div>
+          </div>
+
+          <div class="studio-photoz">
+            <img src="/Images/Wrapping15.jpg" alt="" />
+            <div class="icon-picsphoto" onclick="openFullPreview(26)">
+              <img src="/Images/arrow.png" alt="" />
+            </div>
+          </div>
+
+          <div class="studio-photoz">
+            <img src="/Images/Wrapping13.jpg" alt="" />
+            <div class="icon-picsphoto" onclick="openFullPreview(27)">
+              <img src="/Images/arrow.png" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- BabyBump photo container-->
+      <div class="babybump-categories" id="babybump-categories">
+        <div class="photoz-Container">
+          <div class="studio-photoz">
+            <img src="/Images/babyBump.jpg" alt="" />
+            <div class="icon-picsphoto" onclick="openFullPreview(28)">
+              <img src="/Images/arrow.png" alt="" />
+            </div>
+          </div>
+
+          <div class="studio-photoz">
+            <img src="/Images/babyBump3.jpg" alt="" />
+            <div class="icon-picsphoto" onclick="openFullPreview(29)">
+              <img src="/Images/arrow.png" alt="" />
+            </div>
+          </div>
+
+          <div class="studio-photoz">
+            <img src="/Images/babyBump2.jpg" alt="" />
+            <div class="icon-picsphoto" onclick="openFullPreview(30)">
+              <img src="/Images/arrow.png" alt="" />
+            </div>
+          </div>
+
+          <div class="studio-photoz">
+            <img src="/Images/babyBump18.jpg" alt="" />
+            <div class="icon-picsphoto" onclick="openFullPreview(31)">
+              <img src="/Images/arrow.png" alt="" />
+            </div>
+          </div>
+
+          <div class="studio-photoz">
+            <img src="/Images/babyBump4.jpg" alt="" />
+            <div class="icon-picsphoto" onclick="openFullPreview(32)">
+              <img src="/Images/arrow.png" alt="" />
+            </div>
+          </div>
+
+          <div class="studio-photoz">
+            <img src="/Images/babyBump5.jpg" alt="" />
+            <div class="icon-picsphoto" onclick="openFullPreview(33)">
+              <img src="/Images/arrow.png" alt="" />
+            </div>
+          </div>
+
+          <div class="studio-photoz">
+            <img src="/Images/babyBump6.jpg" alt="" />
+            <div class="icon-picsphoto" onclick="openFullPreview(34)">
+              <img src="/Images/arrow.png" alt="" />
+            </div>
+          </div>
+
+          <div class="studio-photoz">
+            <img src="/Images/babyBump7.jpg" alt="" />
+            <div class="icon-picsphoto" onclick="openFullPreview(35)">
+              <img src="/Images/arrow.png" alt="" />
+            </div>
+          </div>
+
+          <div class="studio-photoz">
+            <img src="/Images/babyBump8.jpg" alt="" />
+            <div class="icon-picsphoto" onclick="openFullPreview(36)">
+              <img src="/Images/arrow.png" alt="" />
+            </div>
+          </div>
+
+          <div class="studio-photoz">
+            <img src="/Images/babyBump9.jpg" alt="" />
+            <div class="icon-picsphoto" onclick="openFullPreview(37)">
+              <img src="/Images/arrow.png" alt="" />
+            </div>
+          </div>
+
+          <div class="studio-photoz">
+            <img src="/Images/babyBump10.jpg" alt="" />
+            <div class="icon-picsphoto" onclick="openFullPreview(38)">
+              <img src="/Images/arrow.png" alt="" />
+            </div>
+          </div>
+
+          <div class="studio-photoz">
+            <img src="/Images/babyBump11.jpg" alt="" />
+            <div class="icon-picsphoto" onclick="openFullPreview(39)">
+              <img src="/Images/arrow.png" alt="" />
+            </div>
+          </div>
+
+          <div class="studio-photoz">
+            <img src="/Images/babyBump12.jpg" alt="" />
+            <div class="icon-picsphoto" onclick="openFullPreview(40)">
+              <img src="/Images/arrow.png" alt="" />
+            </div>
+          </div>
+
+          <div class="studio-photoz">
+            <img src="/Images/babyBump13.jpg" alt="" />
+            <div class="icon-picsphoto" onclick="openFullPreview(41)">
+              <img src="/Images/arrow.png" alt="" />
+            </div>
+          </div>
+
+          <div class="studio-photoz">
+            <img src="/Images/babyBump14.jpg" alt="" />
+            <div class="icon-picsphoto" onclick="openFullPreview(42)">
+              <img src="/Images/arrow.png" alt="" />
+            </div>
+          </div>
+
+          <div class="studio-photoz">
+            <img src="/Images/babyBump15.jpg" alt="" />
+            <div class="icon-picsphoto" onclick="openFullPreview(43)">
+              <img src="/Images/arrow.png" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!--Retouch photo container-->
+      <div class="retouch-categories" id="retouch-categories">
+        <div class="photoz-Container">
+          <div class="studio-photoz">
+            <img src="/Images/Retouch1.jpg" alt="" />
+            <div class="icon-picsphoto" onclick="openFullPreview(44)">
+              <img src="/Images/arrow.png" alt="" />
+            </div>
+          </div>
+
+          <div class="studio-photoz">
+            <img src="/Images/Retouch2.jpg" alt="" />
+            <div class="icon-picsphoto" onclick="openFullPreview(45)">
+              <img src="/Images/arrow.png" alt="" />
+            </div>
+          </div>
+
+          <div class="studio-photoz">
+            <img src="/Images/Retouch3.jpg" alt="" />
+            <div class="icon-picsphoto" onclick="openFullPreview(46)">
+              <img src="/Images/arrow.png" alt="" />
+            </div>
+          </div>
+
+          <div class="studio-photoz">
+            <img src="/Images/Retouch4.jpg" alt="" />
+            <div class="icon-picsphoto" onclick="openFullPreview(47)">
+              <img src="/Images/arrow.png" alt="" />
+            </div>
+          </div>
+
+          <div class="studio-photoz">
+            <img src="/Images/Retouch5.jpg" alt="" />
+            <div class="icon-picsphoto" onclick="openFullPreview(48)">
+              <img src="/Images/arrow.png" alt="" />
+            </div>
+          </div>
+
+          <div class="studio-photoz">
+            <img src="/Images/Retouch6.jpg" alt="" />
+            <div class="icon-picsphoto" onclick="openFullPreview(49)">
+              <img src="/Images/arrow.png" alt="" />
+            </div>
+          </div>
+
+          <div class="studio-photoz">
+            <img src="/Images/Retouch7.jpg" alt="" />
+            <div class="icon-picsphoto" onclick="openFullPreview(50)">
+              <img src="/Images/arrow.png" alt="" />
+            </div>
+          </div>
+
+          <div class="studio-photoz">
+            <img src="/Images/Retouch8.jpg" alt="" />
+            <div class="icon-picsphoto" onclick="openFullPreview(51)">
+              <img src="/Images/arrow.png" alt="" />
+            </div>
+          </div>
+
+          <div class="studio-photoz">
+            <img src="/Images/Retouch9.jpg" alt="" />
+            <div class="icon-picsphoto" onclick="openFullPreview(52)">
+              <img src="/Images/arrow.png" alt="" />
+            </div>
+          </div>
+
+          <div class="studio-photoz">
+            <img src="/Images/Retouch10.jpg" alt="" />
+            <div class="icon-picsphoto" onclick="openFullPreview(53)">
+              <img src="/Images/arrow.png" alt="" />
+            </div>
+          </div>
+
+          <div class="studio-photoz">
+            <img src="/Images/Retouch11.jpg" alt="" />
+            <div class="icon-picsphoto" onclick="openFullPreview(54)">
+              <img src="/Images/arrow.png" alt="" />
+            </div>
+          </div>
+
+          <div class="studio-photoz">
+            <img src="/Images/Retouch12.jpg" alt="" />
+            <div class="icon-picsphoto" onclick="openFullPreview(55)">
+              <img src="/Images/arrow.png" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Product photo container-->
+      <div class="Product-categories" id="Product-categories">
+        <!--
+        <div class="photoz-Container">
+          <div class="studio-photoz">
+            <img src="/Images/babyBump.jpg" alt="" />
+            <div class="icon-picsphoto">
+              <img src="/Images/arrow.png" alt="" />
+            </div>
+          </div>
+
+          <div class="studio-photoz">
+            <img src="/Images/babyBump6.jpg" alt="" />
+            <div class="icon-picsphoto">
+              <img src="/Images/arrow.png" alt="" />
+            </div>
+          </div>
+        
+        </div>
+          -->
+      </div>
+
+      <!-- Nature photo container-->
+      <div class="nature-categories" id="nature-categories">
+        <!--
+        <div class="photoz-Container">
+          <div class="studio-photoz">
+            <img src="/Images/babyBump.jpg" alt="" />
+            <div class="icon-picsphoto">
+              <img src="/Images/arrow.png" alt="" />
+            </div>
+          </div>
+
+          <div class="studio-photoz">
+            <img src="/Images/babyBump6.jpg" alt="" />
+            <div class="icon-picsphoto">
+              <img src="/Images/arrow.png" alt="" />
+            </div>
+          </div>
+        
+        </div>
+          -->
+      </div>
+    </div>
+    <div class="nextpage">
+      <button onclick="photographyStudio()">1</button>
+      <button>Next</button>
+    </div>
+
+    <div class="pricing">
+      <h5>Book your session with us</h5>
+      <button onclick="bookingShoot()" id="Shootbook">Book</button>
+    </div>
+    <div class="wallpaper">
+      <!-- image banner-->
+    </div>
+    <footer>
+      <div class="foot">
+        <p>Copyright &COPY; 2024 All rights reserved</p>
+        <div class="social-media-icons">
+          <a
+            href="https://web.facebook.com/stephen.kimuhu.1"
+            target="_blank"
+            rel="noopener noreferrer"
+            ><img src="./Images/facebook.png" alt=""
+          /></a>
+
+          <a href="https://www.instagram.com/kingros_media/" target="_blank">
+            <img src="./Images/instagram.png" alt=""
+          /></a>
+          <a href="https://www.youtube.com/@kingrosmedia4949" target="_blank">
+            <img src="./Images/youtube2.png" alt=""
+          /></a>
+
+          <a
+            href="https://youpic.com/danielmauka"
+            target="_blank"
+            rel="noopener noreferrer"
+            ><img src="./Images/youpic.png" alt=""
+          /></a>
+        </div>
+      </div>
+    </footer>
+    <script src="javascript1.js"></script>
+    <script src="javascript.js"></script>
+  </body>
+</html>

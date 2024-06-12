@@ -1,0 +1,819 @@
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+}
+
+.container {
+  position: relative;
+  width: 100%;
+  height: 80vh;
+  background-size: cover;
+  background-position: center;
+  color: rgb(0, 0, 0);
+  display: flex;
+  text-align: center;
+  font-size: 16px;
+}
+/*adjusting Aboutg  cover page*/
+.aboutCover {
+  position: relative;
+  width: 100%;
+  height: 40vh;
+  background-image: url(./Images/IMGL9984.JPG);
+  background-size: cover;
+  background-position: center;
+  color: rgb(0, 0, 0);
+  display: flex;
+  text-align: center;
+  font-size: 16px;
+}
+/*adjusting wedding  cover page*/
+.container-wedding {
+  position: relative;
+  width: 100%;
+  height: 80vh;
+  background-image: url(./Images/Wedding25.jpg);
+  background-size: cover;
+  background-position: center;
+  color: rgb(0, 0, 0);
+  display: flex;
+  text-align: center;
+  font-size: 16px;
+}
+/*adjusting photography  cover page*/
+.photographyCover {
+  position: relative;
+  width: 100%;
+  height: 80vh;
+  background-image: url(./Images/studiopic.jpg);
+  background-size: cover;
+  background-position: center;
+  color: rgb(0, 0, 0);
+  display: flex;
+  text-align: center;
+  font-size: 16px;
+}
+/*adjusting booking  cover page*/
+.container-booking {
+  position: relative;
+  width: 100%;
+  height: 60vh;
+  background-image: url(./Images/Property2.jpg);
+  background-size: cover;
+  background-position: center;
+  color: rgb(0, 0, 0);
+  display: flex;
+  text-align: center;
+  font-size: 18px;
+}
+/*adjusting Contact  cover page*/
+.contactCover {
+  position: relative;
+  width: 100%;
+  height: 80px;
+
+  background-size: cover;
+  background-position: center;
+  color: rgb(0, 0, 0);
+  display: flex;
+  text-align: center;
+  font-size: 18px;
+}
+/*adjasting  menu icon*/
+.menu-icon {
+  display: none;
+  justify-content: flex-end;
+}
+
+.menu-icon img {
+  width: 40px;
+  height: auto;
+}
+.navbar {
+  width: 100%;
+  margin: 20px 20px;
+  display: flex;
+  align-items: center;
+  padding: 35px 10px;
+  justify-content: space-between;
+  border-radius: 5px;
+  height: 60px;
+  font-size: 18px;
+  font-weight: 400;
+}
+.logo {
+  width: 400px;
+  font-family: crossorigin;
+  text-decoration: none;
+  list-style: none;
+  color: rgb(0, 0, 0);
+  font-size: 25px;
+  line-height: 60px;
+  padding: 0 100px;
+  font-weight: bold;
+}
+.nav-link {
+  display: flex;
+  gap: 2rem;
+  margin-left: auto;
+}
+
+.nav-links .drop-down li {
+  list-style: none;
+  height: 100%;
+  padding: 10px 10px;
+
+  cursor: pointer;
+}
+
+.navbar ul li a {
+  color: rgb(0, 0, 0);
+  text-transform: uppercase;
+  border-radius: 2px;
+  font-size: 20px;
+  font-weight: 400;
+  transition: 1.5s;
+}
+.nav-links a:hover {
+  background: black;
+  border-radius: 5px;
+
+  color: white;
+}
+/* Dropdown Button */
+
+/* Dropdown Content (Hidden by Default) */
+/* Show the dropdown when hovering over the "Services" link */
+.service-dropdown:hover .drop-down {
+  display: block;
+}
+
+/* Keep the dropdown visible for a short time after moving the cursor away */
+.drop-down {
+  display: none;
+  position: absolute;
+  padding: 10px 5px;
+  margin: 10px 0;
+  color: #000000;
+
+  box-shadow: 0 4px 12px rgb(58, 54, 54);
+  border-radius: 5px;
+  font-size: 18px;
+  transition: display 0.5s, opacity 1.5s;
+}
+.drop-down li {
+  font-weight: 600;
+}
+.service-dropdown:hover .drop-down {
+  display: block;
+}
+
+.service-dropdown:hover .drop-down {
+  opacity: 1; /* Ensure the dropdown is fully visible */
+}
+
+/* Hide the dropdown after a delay when not hovered */
+.service-dropdown:not(:hover) .drop-down {
+  display: block;
+  opacity: 0; /* Hide the dropdown */
+  transition-delay: 0.5s; /* Adjust the delay time as needed */
+}
+
+.checkbtn {
+  color: white;
+}
+.checkbtn {
+  font-size: 40px;
+  color: white;
+  float: right;
+  line-height: 80px;
+  margin: 30px 30px;
+  cursor: pointer;
+  display: none;
+}
+#check {
+  display: none;
+}
+
+.arrows {
+  display: flex;
+}
+
+.back-arrow,
+.next-arrow {
+  font-size: 40px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: auto;
+  height: auto;
+  z-index: 1; /* Ensure arrows are above other content */
+  padding: 20px;
+  margin: 10px;
+  cursor: pointer;
+}
+
+.back-arrow {
+  left: 0;
+}
+
+.next-arrow {
+  right: 0;
+}
+.back-arrow .next-arrow:hover {
+  background-color: bisque;
+  margin: 5px solid black;
+}
+
+.image-buttons {
+  display: flex;
+  margin-top: 80vh;
+  text-align: center;
+}
+
+.image-buttons button {
+  width: 20px;
+  height: 20px;
+  background-color: rgb(0, 0, 0);
+  border: none;
+  outline: none;
+  margin: 0 5px;
+  cursor: pointer;
+  border-radius: 50%;
+  transition: 0.5s;
+  color: #f9f9f9;
+}
+.image-buttons button:hover {
+  background-color: #0082e0;
+  box-shadow: 1px 2px 4px gray;
+}
+/* Adjust text in cover photo */
+.header-text {
+  position: absolute;
+  top: 50%;
+  left: 38%;
+  transform: translate(-50%, -50%);
+  height: auto;
+}
+#pagesocialmediaicons {
+  margin-top: 30px;
+  position: absolute;
+  top: 60%;
+  left: 38%;
+  transform: translate(-50%, -50%);
+  width: 180px;
+}
+
+.header-text h1 {
+  font-size: 50px;
+  color: maroon;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+.header-text p {
+  font-size: 24px;
+  color: white;
+}
+.pagebtn-wedding {
+  position: absolute;
+  top: 70%;
+  left: 35%;
+  transform: translate(-50%, -50%);
+}
+.pagebtn-wedding button a {
+  color: rgb(0, 0, 0);
+}
+.pagebtn-wedding button {
+  background: transparent;
+  color: rgb(0, 0, 0);
+  width: 250px;
+  height: 70px;
+  font-size: 24px;
+  text-transform: uppercase;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.5s;
+  outline: none;
+}
+.pagebtn-wedding button:hover {
+  border-radius: 20px;
+  font-weight: bold;
+  border: solid maroon 4px;
+}
+
+/* showing differnt categories  */
+.types-of-wedding {
+  width: 55%;
+  height: 50px;
+  background-color: rgb(114, 113, 112);
+  display: flex;
+  justify-content: space-between;
+
+  margin: 10px auto;
+  font-size: 18px;
+}
+.types-of-wedding button {
+  background-color: rgb(114, 113, 112);
+  width: 150px;
+  height: 45px;
+  margin: auto 25px;
+  cursor: pointer;
+  border: none;
+  font-size: 20px;
+  color: white;
+  line-height: 50px;
+  justify-content: space-between;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+#weddingAll {
+  background-color: #000000;
+}
+.types-of-wedding button:hover {
+  color: #ffffff;
+  background-color: rgb(0, 0, 0);
+}
+.Wedding-type-container {
+  width: 80%;
+  position: relative;
+  margin: 20px auto;
+}
+/* showing all wedding photos Container categories  */
+.wedding-Container-all {
+  width: 65%;
+  margin: auto;
+}
+
+.wedding-Container {
+  margin-top: 20px;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.wedding-photos {
+  position: relative;
+  width: calc(33.33% - 20px);
+  /* Adjust width based on the number of items per row */
+
+  height: 400px;
+  max-width: 600px;
+  max-height: 500px;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.wedding-photos img {
+  width: 100%;
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: cover;
+  object-position: top;
+  padding: 10px 10px;
+  cursor: pointer;
+  transition: 1s;
+}
+
+/* Positioning icon to the center of the images */
+.icon-pic {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.icon-pic img {
+  width: 70px;
+  background-color: #55555575;
+  transition: 0.5s;
+}
+
+.icon-pic img:hover {
+  border-radius: 10px;
+}
+
+.pricing {
+  margin: 20px auto;
+}
+/*positioning Class=wedding-alone to fit in wedding-type-container*/
+.wedding-alone {
+  width: 65%;
+  margin: auto;
+}
+/*positioning Class=engagement to fit in wedding-type-container*/
+.engagement {
+  width: 65%;
+  margin: auto;
+}
+
+.video-container {
+  width: 65%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.video-container-template {
+  width: 100%;
+
+  overflow: hidden;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.videos-template iframe {
+  width: 426px;
+  height: 240px;
+  outline: 1px solid black;
+  margin: 10px 10px;
+}
+
+.pricing {
+  width: 60%;
+  margin: 20px auto;
+  margin-top: 20px;
+
+  text-align: center;
+}
+.pricing h5 {
+  font-size: 24px;
+  margin: 20px 0;
+}
+
+.pricing button {
+  margin: 20px 0;
+  align-content: center;
+  width: 250px;
+  height: 60px;
+  font-size: 24px;
+  transition: 0.5s;
+  cursor: pointer;
+}
+.pricing button:hover {
+  border-radius: 10px;
+  color: #094d7e;
+}
+
+/*postioning  different photo categories*/
+.containerCategories {
+  width: 100%;
+  height: auto;
+  margin: 10px auto;
+}
+.photocategories {
+  width: 45%;
+  margin: 20px auto;
+  box-shadow: 1px 2px 5px rgba(128, 128, 128, 0.349);
+}
+
+.photoz-Container {
+  margin-top: 20px;
+  width: 100%;
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+.studio-photoz {
+  position: relative;
+  width: 100%;
+  height: 400px;
+  width: calc(33.33% - 20px);
+  max-width: 600px;
+  max-height: 500px;
+  margin: 10px;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.studio-photoz img {
+  width: 100%;
+  height: 100%;
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: cover;
+  object-position: top;
+  padding: 10px 10px;
+  cursor: pointer;
+  transition: 1s;
+}
+
+/*positioning icon to center of the images*/
+.icon-picsphoto {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.icon-picsphoto img {
+  width: 70px;
+  background-color: #55555560;
+}
+/*Wrapping categories ,BabyBump categories ,Retouch categories*/
+
+.photocategories1 {
+  margin: auto;
+  width: 45%;
+}
+.wrapping-categories {
+  width: 45%;
+  margin: auto;
+  display: none;
+}
+.Product-categories {
+  width: 45%;
+  margin: auto;
+  display: none;
+}
+.retouch-categories {
+  width: 45%;
+  margin: auto;
+  display: none;
+}
+.babybump-categories {
+  width: 45%;
+  margin: auto;
+  display: none;
+}
+
+/*getting the full image after click*/
+.fullpic {
+  display: flex;
+  width: 100%;
+  height: 100vh;
+  margin: 10px auto;
+  justify-content: center;
+  display: none;
+}
+.fullpic img {
+  width: 40%;
+  border-radius: 10px;
+  margin: auto;
+}
+
+/*css for next page*/
+.nextpage {
+  display: flex;
+
+  width: 80%;
+  margin: 20px auto;
+  justify-content: center;
+}
+.nextpage button {
+  margin: 5px 5px;
+  width: 50px;
+  height: 30px;
+  cursor: pointer;
+}
+.booking-session {
+  width: 60%;
+  height: auto;
+  text-align: center;
+  margin: 10px auto;
+}
+.booking-session p {
+  font-size: 30px;
+  font-weight: 400;
+}
+.booking-session button {
+  width: 120px;
+  height: 40px;
+  font-size: 24px;
+  margin-top: 20px;
+  background-color: blue;
+  cursor: pointer;
+  border: none;
+  transition: 0.5s;
+}
+.booking-session button:hover {
+  box-shadow: 1px 3px 8px rgb(0, 0, 0);
+  border-radius: 5px;
+}
+.social-media-icons img {
+  width: 20px;
+}
+.wallpaper {
+  width: 100%;
+  height: 50vh;
+  background-image: url(./Images/Retouch13.jpg);
+  background-color: #000000;
+  margin: 20px 0;
+  background-size: cover;
+  background-position: center;
+}
+
+/*Booking Page*/
+.bookingfull {
+  width: 60%;
+  margin: 20px auto;
+}
+.booking-services {
+  font-size: 30px;
+  text-align: center;
+  font-weight: 400;
+}
+.bookingrply {
+  margin: 20px auto;
+  font-size: 16px;
+  width: 90%;
+}
+.booking-reply p {
+  text-align: center;
+}
+.booking-container {
+  width: 70%;
+
+  display: flex;
+  margin-left: 11%;
+}
+.Wedding-bookings {
+  width: 60%;
+  border-bottom: 1px solid black;
+  margin: auto;
+  padding: 20px 20px;
+  margin: 20px 20px;
+}
+
+.form-group {
+  width: 80%;
+  height: auto;
+  margin: 20px 20px;
+}
+.form-groupname {
+  display: flex;
+  width: 85%;
+  overflow: hidden;
+}
+
+label {
+  display: block;
+  width: 100%;
+}
+
+.required {
+  color: red;
+  margin-left: 5px;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid black;
+  padding: 5px 0;
+  margin-top: 5px;
+}
+#submit-form {
+  width: 150px;
+  height: 30px;
+  margin-bottom: 20px;
+}
+.form-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.form-group .form-groupname {
+  flex: 1;
+  margin-right: 10px;
+}
+
+.form-group label {
+  display: block;
+}
+
+.form-group select,
+.form-group input[type="date"] {
+  width: 100%;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+  outline: none;
+}
+
+input[type="date"]::-webkit-inner-spin-button {
+  display: none;
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator {
+  opacity: 1;
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator:hover {
+  background: none;
+}
+
+input[type="date"]::-webkit-clear-button {
+  display: none;
+}
+
+input[type="date"] {
+  appearance: none;
+}
+.booking-reply {
+  width: 20%;
+  text-align: center;
+  margin: auto auto;
+}
+.booking-reply h2 {
+  font-size: 25px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+.booking-reply p {
+  font-size: 22px;
+}
+.lastchildP {
+  font-size: 13px;
+}
+
+/* Full Image Preview Container --*/
+.full-image-preview {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(37, 37, 37, 0.918);
+  display: none;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+.full-image-preview img {
+  max-width: 90%;
+  max-height: 90%;
+  box-shadow: 1px 4px 8px gray;
+}
+.full-image-preview span {
+  width: 100%;
+  height: 30px;
+  outline: solid rgb(255, 255, 255) 2px;
+
+  margin: auto;
+}
+
+.close-btn {
+  position: absolute;
+  top: 10px;
+  float: right;
+  font-size: 40px;
+  margin-right: 40px;
+  width: 100%;
+  height: 20px;
+  background-color: #f9f9f9;
+  position: absolute;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  cursor: pointer;
+  z-index: 1000;
+}
+.close-btn img {
+  margin-right: 10%;
+  width: 40px;
+}
+
+c .close-btn:hover {
+  background-color: rgba(255, 255, 255, 0.8); /* Darker background on hover */
+}
+
+.prev,
+.next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: transparent;
+  border: none;
+  color: white;
+  font-size: 40px;
+  cursor: pointer;
+}
+
+.prev {
+  left: 40px;
+}
+
+.next {
+  right: 40px;
+}
